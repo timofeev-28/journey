@@ -2,16 +2,16 @@
   display: inline-flex;
   padding: 10px 20px;
 
-  color: $color-default-white;
+  color: $color-white;
 
-  background-color: $color-neon-blue;
+  background-color: $color-text;
   border: none;
   cursor: pointer;
 
   transition: opacity $trans-default;
 
   &--red {
-    background-color: $color-torch-red;
+    background-color: $color-text;
   }
 
   &:disabled {

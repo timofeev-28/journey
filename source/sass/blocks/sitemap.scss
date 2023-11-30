@@ -1,0 +1,32 @@
+.sitemap {
+  padding-block: 20px;
+}
+
+.sitemap__logo {
+  display: inline-block;
+  background-color: $color-btn;
+  border-radius: 5px;
+}
+
+.sitemap h1 {
+  margin-block: 30px;
+  font-size: 40px;
+}
+
+.sitemap li {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 35px;
+}
+
+.sitemap a {
+  transform: color $trans-default;
+
+  @include hover-focus {
+    color: $color-btn;
+  }
+
+  @include active {
+    color: $color-active;
+  }
+}
