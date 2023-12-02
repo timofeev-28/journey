@@ -1,3 +1,9 @@
+@mixin not-outline {
+  &:focus {
+    outline: none;
+  }
+}
+
 @mixin hover {
   @media (hover: hover) {
     &:hover:not(.focus-visible):not(:disabled) {
@@ -59,12 +65,6 @@
 
 @mixin vp-768 {
   @media (max-width: ($vp-768 - 1px)) {
-    @content;
-  }
-}
-
-@mixin vp-320 {
-  @media (max-width: ($vp-320 - 1px)) {
     @content;
   }
 }

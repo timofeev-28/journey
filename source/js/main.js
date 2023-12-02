@@ -1,5 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
+import {initBurger} from './modules/init/init-burger';
 
 // ---------------------------------
 
@@ -19,6 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    initBurger();
   });
 });
 

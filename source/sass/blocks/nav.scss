@@ -1,0 +1,142 @@
+.nav {
+  justify-self: center;
+
+  @include vp-1200 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    row-gap: 47px;
+    justify-self: initial;
+    padding: 30px 45px 70px;
+    min-height: 408px;
+    overflow-y: auto;
+    background-color: $color-white;
+    transform: translateY(-105%);
+    transition: transform $trans-modal, visibility $trans-modal;
+  }
+
+  @include vp-768 {
+    padding: 15px 15px 70px;
+  }
+}
+
+.nav.is-active {
+  visibility: visible;
+  transform: none;
+  transition: transform $trans-modal, visibility $trans-modal;
+}
+
+.nav__burger-close {
+  display: none;
+
+  @include vp-1200 {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    padding-left: 3px;
+    width: 26px;
+    height: 26px;
+    color: $color-text;
+    background-color: $color-transparent;
+    border: none;
+    cursor: pointer;
+    transition: outline $trans-default;
+  }
+
+  @include not-outline;
+
+  @include hover-focus {
+    color: $color-btn;
+  }
+
+  @include active {
+    color: $color-btn;
+  }
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 21px;
+  margin-block: 0;
+  padding-left: 0;
+  padding-right: 3px;
+  list-style: none;
+
+  @include vp-1200 {
+    flex-direction: column;
+    align-items: start;
+    gap: 24px;
+  }
+}
+
+.nav__link {
+  position: relative;
+  padding: 3px 5px;
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-white;
+
+  @include vp-1200 {
+    font-weight: 700;
+    letter-spacing: 0.64px;
+    text-transform: uppercase;
+    color: $color-text;
+  }
+
+  // полоска снизу ссылки для hover
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    background-color: $color-white;
+    transform: scaleX(0);
+    transition: transform $trans-default;
+
+    @include vp-1200 {
+      background-color: $color-text;
+    }
+  }
+
+  // бордер вокруг ссылки для focus
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    border: 1px solid $color-white;
+    transition: opacity $trans-default;
+
+    @include vp-1200 {
+      border: 1px solid $color-text;
+    }
+  }
+
+  @include not-outline;
+
+  @include focus {
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  @include hover {
+    &::after {
+      transform: scaleX(1);
+    }
+  }
+
+  @include active {
+    &::after {
+      transform: scaleX(0);
+    }
+  }
+}
