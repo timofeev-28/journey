@@ -54,20 +54,58 @@
   line-height: 16px;
   color: $color-white;
   background-color: $color-btn;
+  transition: color $trans-default,
+    background-color $trans-default,
+    box-shadow $trans-default;
+
+  @include not-outline;
+
+  @include hover-focus {
+    color: $color-active;
+    background-color: $color-white;
+    box-shadow: inset 0 0 0 1px $color-active;
+    border-radius: 6px;
+  }
+
+  @include active {
+    color: $color-white;
+    background-color: $color-active;
+  }
+
+  @include disabled {
+    color: $color-white;
+    background-color: $color-disabled;
+  }
 }
 
 .hero__wrapper-features {
   margin-top: auto;
+}
 
-  span {
-    display: inline-block;
-    padding: 14px 20px;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 16px;
-    color: $color-white;
-    border: 1px solid $color-white;
-    opacity: 0.5;
+.hero__features {
+  position: relative;
+  display: inline-block;
+  padding: 13px 19px 13px 39px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: $color-white;
+  border: 1px solid $color-white;
+  opacity: 0.5;
+
+  &:first-child {
+    margin-right: 7px;
+  }
+
+  &:last-child {
+    padding: 13px 20px 13px 39px;
+  }
+
+  svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 18px;
   }
 }
 
