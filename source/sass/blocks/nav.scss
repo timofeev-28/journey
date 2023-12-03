@@ -9,9 +9,9 @@
     visibility: hidden;
     display: flex;
     flex-direction: column;
-    row-gap: 47px;
+    row-gap: 54px;
     justify-self: initial;
-    padding: 30px 45px 70px;
+    padding: 30px 40px 66px;
     min-height: 408px;
     overflow-y: auto;
     background-color: $color-white;
@@ -37,7 +37,7 @@
     position: relative;
     display: inline-block;
     padding: 0;
-    padding-left: 3px;
+    padding-left: 5px;
     width: 26px;
     height: 26px;
     color: $color-text;
@@ -71,7 +71,7 @@
   @include vp-1200 {
     flex-direction: column;
     align-items: start;
-    gap: 24px;
+    gap: 20px;
   }
 }
 

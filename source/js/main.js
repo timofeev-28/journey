@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {initBurger} from './modules/init/init-burger';
+import {initHeroSlider} from './modules/sliders/init-swiper-hero';
 
 // ---------------------------------
 
@@ -21,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     initBurger();
+    initHeroSlider();
   });
 });
 
