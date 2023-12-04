@@ -5,7 +5,7 @@
   left: 0;
   z-index: 16;
 
-  @include vp-1200 {
+  @include vp-1199 {
     background-color: $color-btn;
   }
 }
@@ -18,13 +18,13 @@
   padding: 43px 20px 42px 52px;
   background-color: $color-btn;
 
-  @include vp-1200 {
+  @include vp-1199 {
     grid-template-columns: 130px 1fr 130px;
     padding: 20px 0;
     background-color: $color-transparent;
   }
 
-  @include vp-768 {
+  @include vp-767 {
     grid-template-columns: 1fr 206px;
     gap: 0;
     padding: 15px 0 13px;
@@ -34,7 +34,7 @@
 .header__burger {
   display: none;
 
-  @include vp-1200 {
+  @include vp-1199 {
     position: relative;
     display: inline-block;
     padding: 0;
@@ -47,7 +47,7 @@
     transition: outline $trans-default, color $trans-default, opacity $trans-default;
   }
 
-  @include vp-768 {
+  @include vp-767 {
     align-self: self-start;
   }
 
@@ -72,7 +72,7 @@
   cursor: auto;
   transition: outline $trans-default;
 
-  @include vp-1200 {
+  @include vp-1199 {
     position: relative;
     z-index: 2;
     grid-column: 2 / 3;
@@ -80,7 +80,7 @@
     margin-right: 0;
   }
 
-  @include vp-768 {
+  @include vp-767 {
     justify-self: end;
     margin-bottom: 5px;
   }
@@ -98,7 +98,7 @@
 }
 
 .header__logo.is-active {
-  @include vp-1200 {
+  @include vp-1199 {
     img:first-child {
       display: none;
     }
@@ -117,7 +117,7 @@
   color: $color-white;
   transition: color $trans-default;
 
-  @include vp-1200 {
+  @include vp-1199 {
     position: relative;
     z-index: 2;
     grid-column: 3 / 4;
@@ -128,7 +128,7 @@
     transition: none;
   }
 
-  @include vp-768 {
+  @include vp-767 {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     font-size: 14px;
@@ -148,7 +148,7 @@
 }
 
 .header__link.is-active {
-  @include vp-1200 {
+  @include vp-1199 {
     color: $color-text;
 
     @include active {

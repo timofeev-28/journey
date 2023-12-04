@@ -1,7 +1,7 @@
 .nav {
   justify-self: center;
 
-  @include vp-1200 {
+  @include vp-1199 {
     position: absolute;
     top: 0;
     right: 0;
@@ -19,7 +19,7 @@
     transition: transform $trans-modal, visibility $trans-modal;
   }
 
-  @include vp-768 {
+  @include vp-767 {
     padding: 15px 15px 70px;
   }
 }
@@ -33,7 +33,7 @@
 .nav__burger-close {
   display: none;
 
-  @include vp-1200 {
+  @include vp-1199 {
     position: relative;
     display: inline-block;
     padding: 0;
@@ -68,7 +68,7 @@
   padding-right: 3px;
   list-style: none;
 
-  @include vp-1200 {
+  @include vp-1199 {
     flex-direction: column;
     align-items: start;
     gap: 20px;
@@ -82,7 +82,7 @@
   line-height: 16px;
   color: $color-white;
 
-  @include vp-1200 {
+  @include vp-1199 {
     font-weight: 700;
     letter-spacing: 0.64px;
     text-transform: uppercase;
@@ -101,7 +101,7 @@
     transform: scaleX(0);
     transition: transform $trans-default;
 
-    @include vp-1200 {
+    @include vp-1199 {
       background-color: $color-text;
     }
   }
@@ -115,7 +115,7 @@
     border: 1px solid $color-white;
     transition: opacity $trans-default;
 
-    @include vp-1200 {
+    @include vp-1199 {
       border: 1px solid $color-text;
     }
   }
