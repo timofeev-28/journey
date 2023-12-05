@@ -19,16 +19,45 @@
   flex-direction: column;
   padding-top: 200px;
   padding-bottom: 80px;
-  min-height: 800px; // временно
+  min-height: 800px;
+
+  @include vp-1199 {
+    align-items: center;
+    padding-top: 212px;
+    padding-bottom: 90px;
+    min-height: 1024px;
+  }
+
+  @include vp-767 {
+    padding-top: 132px;
+    min-height: 568px;
+  }
 
   h2 {
+    position: relative;
+    z-index: 1;
     margin-top: 0;
     margin-bottom: 23px;
-    max-width: 770px;
+    max-width: 922px;
     font-size: 77px;
     font-weight: 800;
     line-height: 77px;
     color: $color-white;
+
+    @include vp-1199 {
+      margin-bottom: 13px;
+      max-width: 671px;
+      font-size: 56px;
+      line-height: 56px;
+      text-align: center;
+    }
+
+    @include vp-767 {
+      margin-bottom: 15px;
+      max-width: 322px;
+      font-size: 26px;
+      line-height: 26px;
+    }
   }
 
   p {
@@ -39,6 +68,23 @@
     font-weight: 400;
     line-height: 24px;
     color: $color-white;
+
+    @include vp-1199 {
+      margin-bottom: 27px;
+      max-width: 500px;
+      text-align: center;
+    }
+
+    @include vp-1023 {
+      max-width: 473px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 60px;
+      max-width: 391px;
+      font-size: 15px;
+      line-height: 20px;
+    }
   }
 }
 
@@ -57,6 +103,15 @@
   transition: color $trans-default,
     background-color $trans-default,
     box-shadow $trans-default;
+
+  @include vp-1199 {
+    margin-bottom: 64px;
+    padding: 21px 15px 19px;
+  }
+
+  @include vp-1023 {
+    margin-bottom: 45px;
+  }
 
   @include not-outline;
 
@@ -80,6 +135,10 @@
 
 .hero__wrapper-features {
   margin-top: auto;
+
+  @include vp-1199 {
+    display: none;
+  }
 }
 
 .hero__features {
@@ -115,6 +174,18 @@
   right: 0;
   width: 482px;
   height: 317px;
+
+  @include vp-1199 {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 442px;
+    height: 300px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
 }
 
 .hero__btn-play {
@@ -122,6 +193,56 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 0;
+  width: 56px;
+  height: 56px;
+  color: $color-white;
+  background-color: $color-transparent;
+  border: 1px solid $color-white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: color $trans-default,
+    background-color $trans-default,
+    border-color $trans-default;
+
+  svg:last-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-49%, -50%);
+    opacity: 0;
+    transition: opacity $trans-default;
+  }
+
+  svg {
+    transform: translate(-1px, -1px);
+  }
+
+  @include not-outline;
+
+  @include hover-focus {
+    border-color: $color-active;
+
+    & svg:last-child {
+      opacity: 1;
+    }
+  }
+
+  @include active {
+    color: $color-white;
+    background-color: $color-active;
+
+    & svg:last-child {
+      opacity: 0;
+    }
+  }
+
+  @include disabled {
+    color: $color-btn;
+    border-color: $color-btn;
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
 }
 
 .hero__wrapper-image {
@@ -132,5 +253,70 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+}
+
+.hero__swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  right: 111px;
+  bottom: 91px;
+  left: auto;
+  text-align: end;
+
+  @include vp-1199 {
+    right: 0;
+    bottom: 34px;
+    left: auto;
+    text-align: center;
+  }
+
+  .swiper-pagination-bullet {
+    position: relative;
+    margin: 0 8px;
+    width: 10px;
+    height: 10px;
+    background-color: $color-transparent;
+    border: 1px solid $color-white;
+    opacity: 1;
+
+    @include vp-1199 {
+      margin: 0 7px;
+    }
+
+    @include vp-767 {
+      margin: 0 6px;
+      width: 8px;
+      height: 8px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: -3px;
+      border: 1px solid $color-white;
+      border-radius: 50%;
+      opacity: 0;
+    }
+
+    @include not-outline;
+
+    @include focus {
+      &::after {
+        opacity: 0.5;
+      }
+    }
+
+    @include hover {
+      background-color: #d9d9d9;
+    }
+
+    @include active {
+      background-color: rgba(217, 217, 217, 0.5);
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $color-white;
+    border: 1px solid $color-white;
+    cursor: auto;
   }
 }
