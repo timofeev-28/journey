@@ -22,7 +22,7 @@
     <div class="wrapper">
       <header class="header">
         <div class="container">
-          <div class="header__container">
+          <div class="header__container" data-burger="container">
             <button class="header__burger burger" aria-label="Открытие меню навигации" data-burger="burger">
               <svg width="26" height="26" role="img" focusable="false" aria-hidden="true">
                 <use href="./img/sprite.svg#burger"></use>
@@ -123,7 +123,13 @@
                     <h2>Невероятная природа Камчатки</h2>
                     <p>Незабываемое приключение, во&nbsp;время которого вы&nbsp;отправитесь в&nbsp;путешествие по&nbsp;одному из&nbsp;самых нетронутых уголков дикой природы в&nbsp;мире.</p>
                     <a class="hero__link" href="#">Смотреть тур</a>
-                    <div class="hero__wrapper-video">
+                    <div class="hero__wrapper-photo">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/hero/hero-photo-tablet@1x.webp 1x, img/hero/hero-photo-tablet@2x.webp 2x">
+                        <source type="image/webp" width="482" height="317" srcset="img/hero/hero-photo-desktop@1x.webp 1x, img/hero/hero-photo-desktop@2x.webp 2x">
+                        <source type="image/jpeg" media="(max-width: 1199px)" srcset="img/hero/hero-photo-tablet@1x.jpg 1x, img/hero/hero-photo-tablet@2x.jpg 2x">
+                        <img src="img/hero/hero-photo-desktop@1x.jpg" width="410" height="459" srcset="img/hero/hero-photo-desktop@2x.jpg 2x" alt="Фотографии природы Камчатки.">
+                      </picture>
                     </div>
                     <div class="hero__wrapper-features">
                       <span class="hero__features">
@@ -141,13 +147,11 @@
                 </div>
                 <div class="hero__wrapper-image">
                   <picture>
-                    <source type="image/webp" media="(max-width: 350px)" srcset="img/hero/hero-1-mobile@1x.webp 1x, img/hero/hero-1-mobile@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 768px)" srcset="img/hero/hero-1-tablet@1x.webp 1x, img/hero/hero-1-tablet@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1024px)" srcset="img/hero/hero-1-big-tablet@1x.webp 1x, img/hero/hero-1-big-tablet@2x.webp 2x">
-                    <source type="image/webp" width="1440" height="800" srcset="img/hero/hero-1-desktop@1x.webp 1x, img/hero/hero-1-desktop@2x.webp 2x">
-                    <source type="image/jpeg" media="(max-width: 768px)" srcset="img/hero/hero-1-tablet@1x.jpg 1x, img/hero/hero-1-tablet@2x.jpg 2x">
-                    <source type="image/jpeg" media="(max-width: 1024px)" srcset="img/hero/hero-1-big-tablet@1x.jpg 1x, img/hero/hero-1-big-tablet@2x.jpg 2x">
-                    <img src="img/hero/hero-1-desktop@1x.jpg" width="1440" height="800" srcset="img/hero/hero-1-desktop@2x.jpg 2x" alt="">
+                    <source type="image/webp" media="(max-width: 350px)" srcset="img/hero/hero-2-mobile@1x.webp 1x, img/hero/hero-2-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 850px)" srcset="img/hero/hero-2-tablet@1x.webp 1x, img/hero/hero-2-tablet@2x.webp 2x">
+                    <source type="image/webp" width="1440" height="800" srcset="img/hero/hero-2-desktop@1x.webp 1x, img/hero/hero-2-desktop@2x.webp 2x">
+                    <source type="image/jpeg" media="(max-width: 850px)" srcset="img/hero/hero-2-tablet@1x.jpg 1x, img/hero/hero-2-tablet@2x.jpg 2x">
+                    <img src="img/hero/hero-2-desktop@1x.jpg" width="1440" height="800" srcset="img/hero/hero-2-desktop@2x.jpg 2x" alt="">
                   </picture>
                 </div>
               </li>
@@ -157,8 +161,11 @@
                     <h2>Магические пейзажи Алтайского Края</h2>
                     <p>Алтайский трекинг-тур&nbsp;&mdash; это захватывающее приключение с&nbsp;посещением магических и&nbsp;захватывающих дух ландшафтов Алтайских гор.</p>
                     <a class="hero__link" href="#">Смотреть тур</a>
-                    <div class="hero__wrapper-video">
+
+                    <div class="hero__wrapper-yandex-music">
+                      <iframe style="border:none;width:385px;height:215px;" width="385" height="215" src="https://music.yandex.ru/iframe/track/119107082/25474374"></iframe>
                     </div>
+
                     <div class="hero__wrapper-features">
                       <span class="hero__features">
                         <svg width="12" height="12" role="img" focusable="false" aria-hidden="true">
@@ -175,13 +182,11 @@
                 </div>
                 <div class="hero__wrapper-image">
                   <picture>
-                    <source type="image/webp" media="(max-width: 350px)" srcset="img/hero/hero-1-mobile@1x.webp 1x, img/hero/hero-1-mobile@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 768px)" srcset="img/hero/hero-1-tablet@1x.webp 1x, img/hero/hero-1-tablet@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1024px)" srcset="img/hero/hero-1-big-tablet@1x.webp 1x, img/hero/hero-1-big-tablet@2x.webp 2x">
-                    <source type="image/webp" width="1440" height="800" srcset="img/hero/hero-1-desktop@1x.webp 1x, img/hero/hero-1-desktop@2x.webp 2x">
-                    <source type="image/jpeg" media="(max-width: 768px)" srcset="img/hero/hero-1-tablet@1x.jpg 1x, img/hero/hero-1-tablet@2x.jpg 2x">
-                    <source type="image/jpeg" media="(max-width: 1024px)" srcset="img/hero/hero-1-big-tablet@1x.jpg 1x, img/hero/hero-1-big-tablet@2x.jpg 2x">
-                    <img src="img/hero/hero-1-desktop@1x.jpg" width="1440" height="800" srcset="img/hero/hero-1-desktop@2x.jpg 2x" alt="">
+                    <source type="image/webp" media="(max-width: 350px)" srcset="img/hero/hero-3-mobile@1x.webp 1x, img/hero/hero-3-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 850px)" srcset="img/hero/hero-3-tablet@1x.webp 1x, img/hero/hero-3-tablet@2x.webp 2x">
+                    <source type="image/webp" width="1440" height="800" srcset="img/hero/hero-3-desktop@1x.webp 1x, img/hero/hero-3-desktop@2x.webp 2x">
+                    <source type="image/jpeg" media="(max-width: 850px)" srcset="img/hero/hero-3-tablet@1x.jpg 1x, img/hero/hero-3-tablet@2x.jpg 2x">
+                    <img src="img/hero/hero-3-desktop@1x.jpg" width="1440" height="800" srcset="img/hero/hero-3-desktop@2x.jpg 2x" alt="">
                   </picture>
                 </div>
               </li>

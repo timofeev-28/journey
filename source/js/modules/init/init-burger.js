@@ -5,6 +5,7 @@ const linksNav = document.querySelectorAll('[data-burger="link-nav"]');
 const linkTelephone = document.querySelector('[data-burger="link-tel"]');
 const burgerClose = document.querySelector('[data-burger="burger-close"]');
 const overlay = document.querySelector('[data-burger="overlay"]');
+const container = document.querySelector('[data-burger="container"]');
 
 // закрытие бургера
 const burgerRemoveActive = () => {
@@ -12,7 +13,9 @@ const burgerRemoveActive = () => {
   navigation.classList.remove('is-active');
   document.body.classList.remove('scroll-lock');
   logo.classList.remove('is-active');
+  container.insertBefore(logo, navigation);
   linkTelephone.classList.remove('is-active');
+  container.append(linkTelephone);
   overlay.classList.remove('is-active');
   closeBurgerLinksRemove();
   document.removeEventListener('click', documentClickHendler);
@@ -54,7 +57,8 @@ const burgerClickHandler = () => {
   logo.classList.toggle('is-active');
   linkTelephone.classList.toggle('is-active');
   overlay.classList.toggle('is-active');
-
+  navigation.append(logo);
+  navigation.append(linkTelephone);
 
   if (navigation.closest('.is-active')) {
     document.addEventListener('click', documentClickHendler);

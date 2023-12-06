@@ -245,6 +245,59 @@
   }
 }
 
+.hero__wrapper-photo {
+  position: absolute;
+  top: 189px;
+  right: 0;
+  width: 410px;
+  height: 459px;
+
+  @include vp-1199 {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 442px;
+    height: 365px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+
+  img {
+    width: 410px;
+    height: 459px;
+
+    @include vp-1199 {
+      width: 442px;
+      height: 365px;
+    }
+  }
+}
+
+.hero__wrapper-yandex-music {
+  position: absolute;
+  top: 378px;
+  right: 0;
+  width: 385px;
+  height: 215px;
+  background-color: $color-transparent;
+
+  @include vp-1199 {
+    position: relative;
+    top: auto;
+    right: auto;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+
+  iframe {
+    border-radius: 12px;
+  }
+}
+
 .hero__wrapper-image {
   position: absolute;
   inset: 0;

@@ -99,6 +99,11 @@
 
 .header__logo.is-active {
   @include vp-1199 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
     img:first-child {
       display: none;
     }
@@ -106,6 +111,13 @@
     img:last-child {
       display: block;
     }
+  }
+
+  @include vp-767 {
+    top: 15px;
+    right: 15px;
+    left: auto;
+    transform: none;
   }
 }
 
@@ -149,11 +161,19 @@
 
 .header__link.is-active {
   @include vp-1199 {
+    position: absolute;
+    top: 32px;
+    right: 55px;
     color: $color-text;
 
     @include active {
       color: $color-btn;
       opacity: 1;
     }
+  }
+
+  @include vp-767 {
+    top: 70px;
+    right: 15px;
   }
 }
