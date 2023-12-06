@@ -29,8 +29,9 @@
               </svg>
             </button>
             <a class="header__logo" href="#" aria-current="page" data-burger="logo">
-              <img src="./img/svg/logo-white.svg" width="142" height="42" alt="Логотип компании Lifetour">
-              <img src="./img/svg/logo-dark.svg" width="142" height="42" alt="Логотип компании Lifetour">
+              <svg width="142" height="42" role="img" focusable="false" aria-hidden="true">
+                <use href="./img/sprite.svg#logo"></use>
+              </svg>
             </a>
             <nav class="header__nav nav" data-burger="nav">
               <button class="nav__burger-close" aria-label="Закрытие меню навигации" data-burger="burger-close">
@@ -161,11 +162,9 @@
                     <h2>Магические пейзажи Алтайского Края</h2>
                     <p>Алтайский трекинг-тур&nbsp;&mdash; это захватывающее приключение с&nbsp;посещением магических и&nbsp;захватывающих дух ландшафтов Алтайских гор.</p>
                     <a class="hero__link" href="#">Смотреть тур</a>
-
                     <div class="hero__wrapper-yandex-music">
                       <iframe style="border:none;width:385px;height:215px;" width="385" height="215" src="https://music.yandex.ru/iframe/track/119107082/25474374"></iframe>
                     </div>
-
                     <div class="hero__wrapper-features">
                       <span class="hero__features">
                         <svg width="12" height="12" role="img" focusable="false" aria-hidden="true">
@@ -191,7 +190,7 @@
                 </div>
               </li>
             </ul>
-            <div class="hero__swiper-pagination swiper-pagination"></div>
+            <div class="hero__swiper-pagination swiper-pagination container"></div>
           </div>
         </section>
         <!-- <section class="tours" id="tours"></section>

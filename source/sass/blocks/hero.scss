@@ -310,12 +310,20 @@
 }
 
 .hero__swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
-  right: 111px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-right: 112px;
+  padding-left: 120px;
   bottom: 91px;
-  left: auto;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: end;
 
   @include vp-1199 {
+    margin: 0;
+    padding: 0;
+    padding-left: 0;
+    transform: none;
     right: 0;
     bottom: 34px;
     left: auto;

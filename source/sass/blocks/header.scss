@@ -69,6 +69,8 @@
 
 .header__logo {
   margin-right: 35px;
+  color: $color-white;
+  height: 42px;
   cursor: auto;
   transition: outline $trans-default;
 
@@ -91,10 +93,6 @@
     outline: 2px solid $color-white;
     outline-offset: 3px;
   }
-
-  img:last-child {
-    display: none;
-  }
 }
 
 .header__logo.is-active {
@@ -102,15 +100,8 @@
     position: absolute;
     top: 20px;
     left: 50%;
+    color: $color-text;
     transform: translateX(-50%);
-
-    img:first-child {
-      display: none;
-    }
-
-    img:last-child {
-      display: block;
-    }
   }
 
   @media (max-width: 560px) {
