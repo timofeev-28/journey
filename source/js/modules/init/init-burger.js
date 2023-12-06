@@ -50,6 +50,16 @@ const burgerCloseClickHandler = () => {
   burgerRemoveActive();
 };
 
+// для контроля ширины экрана, чтобы при сужении экрана с
+// активированным бургер-меню сбросился is-active и всё вернулось на место;
+const windowChangeResizeHandler = () => {
+  let width = document.body.clientWidth;
+
+  if (width > 1199) {
+    burgerRemoveActive();
+  }
+};
+
 const burgerClickHandler = () => {
   burger.classList.toggle('is-active');
   navigation.classList.toggle('is-active');
@@ -63,6 +73,7 @@ const burgerClickHandler = () => {
   if (navigation.closest('.is-active')) {
     document.addEventListener('click', documentClickHendler);
     burgerClose.addEventListener('click', burgerCloseClickHandler);
+    window.addEventListener('resize', windowChangeResizeHandler);
     closeBurgerLinksAdd();
   }
 };
