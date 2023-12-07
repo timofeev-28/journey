@@ -20,6 +20,7 @@ const burgerRemoveActive = () => {
   closeBurgerLinksRemove();
   document.removeEventListener('click', documentClickHendler);
   burgerClose.removeEventListener('click', burgerCloseClickHandler);
+  window.removeEventListenerEventListener('resize', windowChangeResizeHandler);
 };
 
 const linksClickHandler = () => {

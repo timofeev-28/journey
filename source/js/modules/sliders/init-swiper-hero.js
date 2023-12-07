@@ -1,20 +1,25 @@
-const sliderHero = document.querySelector('[data-swiper="hero"]');
+import Swiper from '../../vendor/swiper';
+
+const swiperHero = '[data-swiper="hero"]';
+const paginationHero = '[data-swiper="hero-pagination"]';
 
 const setHeroSlider = () => {
-  return new window.Swiper(sliderHero, {
+  const sliderHero = new Swiper(swiperHero, {
     loop: true,
     speed: 800,
 
     pagination: {
-      el: '.swiper-pagination',
+      el: paginationHero,
       type: 'bullets',
       clickable: true,
     },
   });
+
+  return sliderHero;
 };
 
 const initHeroSlider = () => {
-  if (sliderHero) {
+  if (swiperHero && paginationHero) {
     setHeroSlider();
   }
 };

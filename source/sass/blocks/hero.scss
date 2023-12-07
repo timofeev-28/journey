@@ -333,6 +333,9 @@
     background-color: $color-transparent;
     border: 1px solid $color-white;
     opacity: 1;
+    transition: background-color $trans-default,
+      border-color $trans-default,
+      opacity $trans-default;
 
     @include vp-1199 {
       margin: 0 7px;
@@ -342,6 +345,12 @@
       margin: 0 6px;
       width: 8px;
       height: 8px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: -8px;
     }
 
     &::after {
