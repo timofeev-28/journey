@@ -105,12 +105,8 @@
     box-shadow $trans-default;
 
   @include vp-1199 {
-    margin-bottom: 64px;
-    padding: 21px 15px 19px;
-  }
-
-  @include vp-1023 {
     margin-bottom: 45px;
+    padding: 21px 15px 19px;
   }
 
   @include not-outline;
@@ -309,7 +305,7 @@
   }
 }
 
-.hero__swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+.hero__swiper-pagination.swiper-pagination {
   max-width: 1440px;
   margin: 0 auto;
   padding-right: 112px;
@@ -322,7 +318,6 @@
   @include vp-1199 {
     margin: 0;
     padding: 0;
-    padding-left: 0;
     transform: none;
     right: 0;
     bottom: 34px;
@@ -379,5 +374,9 @@
     background-color: $color-white;
     border: 1px solid $color-white;
     cursor: auto;
+
+    @include hover {
+      background-color: $color-white;
+    }
   }
 }
