@@ -68,6 +68,7 @@
         <section class="hero">
           <h1 class="visually-hidden">Самые популярные маршруты восхождений на вершины гор с инструктором</h1>
           <div class="hero__swiper swiper" data-swiper="hero">
+            <div class="hero__swiper-pagination swiper-pagination container" data-swiper="hero-pagination"></div>
             <ul class="hero__list swiper-wrapper">
               <li class="hero__item swiper-slide">
                 <div class="container">
@@ -189,11 +190,74 @@
                 </div>
               </li>
             </ul>
-            <div class="hero__swiper-pagination swiper-pagination container" data-swiper="hero-pagination"></div>
           </div>
         </section>
+
         <section class="tours container" id="tours">
-          <h2 class="title" data-title="Ближайшие туры">Ближайшие туры</h2>
+          <h2 class="tours__title title" data-title="Ближайшие туры">Ближайшие туры</h2>
+          <div class="tours__button-wrapper">
+            <div class="tours__btn-swiper tours__btn-swiper-prev swiper-button-prev" data-button="tours-prev">
+
+            </div>
+            <div class="tours__btn-swiper tours__btn-swiper-next swiper-button-next" data-button="tours-next">
+
+            </div>
+          </div>
+          <div class="tours__slider-wrapper">
+            <div class="tours__swiper swiper" data-swiper="tours">
+              <ul class="tours__list swiper-wrapper">
+                <li class="tours__item swiper-slide" data-slide="slide">
+                <picture>
+                  <source type="image/webp" media="(max-width: 350px)" srcset="img/tours/tours-1-mobile@1x.webp 1x, img/tours/tours-1-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 768px)" srcset="img/tours/tours-1-tablet@1x.webp 1x, img/tours/tours-1-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1024px)" srcset="img/tours/tours-1-big-tablet@1x.webp 1x, img/tours/tours-1-big-tablet@2x.webp 2x">
+                  <source type="image/webp" width="380" height="416" srcset="img/tours/tours-1-desktop@1x.webp 1x, img/tours/tours-1-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 350px)" srcset="img/tours/tours-1-mobile@1x.jpg 1x, img/tours/tours-1-mobile@2x.jpg 2x">
+                  <source type="image/webp" media="(max-width: 768px)" srcset="img/tours/tours-1-tablet@1x.jpg 1x, img/tours/tours-1-tablet@2x.jpg 2x">
+                  <source type="image/jpeg" media="(max-width: 1024px)" srcset="img/tours/tours-1-tablet@1x.jpg 1x, img/tours/tours-1-tablet@2x.jpg 2x">
+                  <img src="img/tours/tours-1-desktop@1x.jpg" width="380" height="416" srcset="img/tours/tours-1-desktop@2x.jpg 2x" alt="Горы с живописной долиной внизу.">
+                </picture>
+                </li>
+                <li class="tours__item swiper-slide" data-slide="slide">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 350px)" srcset="img/tours/tours-2-mobile@1x.webp 1x, img/tours/tours-2-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 768px)" srcset="img/tours/tours-2-tablet@1x.webp 1x, img/tours/tours-2-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1024px)" srcset="img/tours/tours-2-big-tablet@1x.webp 1x, img/tours/tours-2-big-tablet@2x.webp 2x">
+                    <source type="image/webp" width="380" height="416" srcset="img/tours/tours-2-desktop@1x.webp 1x, img/tours/tours-2-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 350px)" srcset="img/tours/tours-2-mobile@1x.jpg 1x, img/tours/tours-2-mobile@2x.jpg 2x">
+                    <source type="image/webp" media="(max-width: 768px)" srcset="img/tours/tours-2-tablet@1x.jpg 1x, img/tours/tours-2-tablet@2x.jpg 2x">
+                    <source type="image/jpeg" media="(max-width: 1024px)" srcset="img/tours/tours-2-tablet@1x.jpg 1x, img/tours/tours-2-tablet@2x.jpg 2x">
+                    <img src="img/tours/tours-2-desktop@1x.jpg" width="380" height="416" srcset="img/tours/tours-2-desktop@2x.jpg 2x" alt="Горы с заснеженными вершинами.">
+                  </picture>
+                </li>
+                <li class="tours__item swiper-slide" data-slide="slide">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 350px)" srcset="img/tours/tours-3-mobile@1x.webp 1x, img/tours/tours-3-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 768px)" srcset="img/tours/tours-3-tablet@1x.webp 1x, img/tours/tours-3-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1024px)" srcset="img/tours/tours-3-big-tablet@1x.webp 1x, img/tours/tours-3-big-tablet@2x.webp 2x">
+                    <source type="image/webp" width="380" height="416" srcset="img/tours/tours-3-desktop@1x.webp 1x, img/tours/tours-3-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 350px)" srcset="img/tours/tours-3-mobile@1x.jpg 1x, img/tours/tours-3-mobile@2x.jpg 2x">
+                    <source type="image/webp" media="(max-width: 768px)" srcset="img/tours/tours-3-tablet@1x.jpg 1x, img/tours/tours-3-tablet@2x.jpg 2x">
+                    <source type="image/jpeg" media="(max-width: 1024px)" srcset="img/tours/tours-3-tablet@1x.jpg 1x, img/tours/tours-3-tablet@2x.jpg 2x">
+                    <img src="img/tours/tours-3-desktop@1x.jpg" width="380" height="416" srcset="img/tours/tours-3-desktop@2x.jpg 2x" alt="Горы, поросшие лесом с вершинами в облаках.">
+                  </picture>
+                </li>
+                <li class="tours__item swiper-slide" data-slide="slide">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 350px)" srcset="img/tours/tours-1-mobile@1x.webp 1x, img/tours/tours-1-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 768px)" srcset="img/tours/tours-1-tablet@1x.webp 1x, img/tours/tours-1-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1024px)" srcset="img/tours/tours-1-big-tablet@1x.webp 1x, img/tours/tours-1-big-tablet@2x.webp 2x">
+                    <source type="image/webp" width="380" height="416" srcset="img/tours/tours-1-desktop@1x.webp 1x, img/tours/tours-1-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 350px)" srcset="img/tours/tours-1-mobile@1x.jpg 1x, img/tours/tours-1-mobile@2x.jpg 2x">
+                    <source type="image/webp" media="(max-width: 768px)" srcset="img/tours/tours-1-tablet@1x.jpg 1x, img/tours/tours-1-tablet@2x.jpg 2x">
+                    <source type="image/jpeg" media="(max-width: 1024px)" srcset="img/tours/tours-1-tablet@1x.jpg 1x, img/tours/tours-1-tablet@2x.jpg 2x">
+                    <img src="img/tours/tours-1-desktop@1x.jpg" width="380" height="416" srcset="img/tours/tours-1-desktop@2x.jpg 2x" alt="Горы с живописной долиной внизу.">
+                  </picture>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a class="tours__btn">Показать все туры</a>
         </section>
 
         <!--<section class="training" id="training"></section>
