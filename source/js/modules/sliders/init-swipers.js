@@ -23,8 +23,8 @@ const heroSliderOptions = {
 
 const toursSliderOptions = {
   navigation: {
-    nextEl: '[data-button="tours-prev"]',
-    prevEl: '[data-button="tours-next"]',
+    nextEl: '[data-button="tours-next"]',
+    prevEl: '[data-button="tours-prev"]',
   },
   slidesPerView: 3,
   spaceBetween: 30,

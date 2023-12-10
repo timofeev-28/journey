@@ -3,6 +3,7 @@ import {Form} from './modules/form-validate/form';
 import {initBurger} from './modules/init/init-burger';
 import {initSliders} from './modules/sliders/init-swipers';
 import {initVideo} from './modules/init/init-video';
+import {initCreateStars} from './modules/init/init-stars';
 
 // ---------------------------------
 
@@ -25,6 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initBurger();
     initSliders();
     initVideo();
+    initCreateStars();
   });
 });
 
