@@ -6,9 +6,11 @@ const starWhite = '<svg width="16" height="16" role="img" focusable="false" aria
 const starTransparent = '<svg width="16" height="16" role="img" focusable="false" aria-hidden="true"><use href="./img/sprite.svg#star"></use></svg>';
 
 const initCreateStars = () => {
-  starsContainers.forEach((starsContainer) => {
-    createStars(starsContainer);
-  });
+  if (starsContainers) {
+    starsContainers.forEach((starsContainer) => {
+      createStars(starsContainer);
+    });
+  }
 };
 
 const createWhiteStar = (starsContainer) => {

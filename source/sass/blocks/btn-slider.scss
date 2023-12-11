@@ -1,0 +1,25 @@
+.btn-slider {
+  margin-top: 0;
+  width: 37px;
+  height: 35px;
+  color: $color-white;
+  background-color: $color-btn;
+  transition: color $trans-default, background-color $trans-default, box-shadow $trans-default;
+
+  @include not-outline;
+
+  @include hover-focus {
+    color: $color-active;
+    box-shadow: inset 0 0 0 1px $color-active;
+    background-color: $color-transparent;
+  }
+
+  @include active {
+    color: $color-white;
+    background-color: $color-active;
+  }
+
+  &::after {
+    content: none;
+  }
+}

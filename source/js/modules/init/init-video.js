@@ -3,6 +3,7 @@ const playButton = document.querySelector('[data-video] button');
 const placeholder = document.querySelector('[data-video] img');
 
 const videoId = 'n_GFN3a0yj0';
+// const videoId = '9TZXsZItgdw';
 
 function initVideo() {
   const playbattonClickHandler = () => {
