@@ -28,6 +28,7 @@ const toursSliderOptions = {
   },
   slidesPerView: 3,
   spaceBetween: 30,
+  speed: 800,
 
   breakpoints: {
     0: {
