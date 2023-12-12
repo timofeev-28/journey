@@ -2,6 +2,7 @@ import Swiper from '../../vendor/swiper';
 
 const heroSliderSelector = '[data-swiper="hero"]';
 const toursSliderSelector = '[data-swiper="tours"]';
+const trainingSliderSelector = '[data-swiper="training"]';
 
 const heroSliderOptions = {
   slidesPerView: 1,
@@ -45,6 +46,31 @@ const toursSliderOptions = {
   },
 };
 
+const trainingSliderOptions = {
+  navigation: {
+    nextEl: '[data-button="training-next"]',
+    prevEl: '[data-button="training-prev"]',
+  },
+  slidesPerView: 4,
+  spaceBetween: 20,
+  speed: 800,
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    430: {
+      slidesPerView: 2,
+    },
+    580: {
+      slidesPerView: 3,
+    },
+    1025: {
+      slidesPerView: 4,
+    },
+  },
+};
+
 const initSlider = (sliderSelector, options) => {
   if (!document.querySelector(sliderSelector)) {
     return null;
@@ -57,6 +83,7 @@ const initSlider = (sliderSelector, options) => {
 const initSliders = () => {
   initSlider(heroSliderSelector, heroSliderOptions);
   initSlider(toursSliderSelector, toursSliderOptions);
+  initSlider(trainingSliderSelector, trainingSliderOptions);
 };
 
 // добавляется возможность фокуса на слайды
