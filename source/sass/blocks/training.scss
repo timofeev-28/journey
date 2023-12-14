@@ -8,18 +8,14 @@
 }
 
 .training__tilte {
-  margin-bottom: 32px;
+  margin-bottom: 17px;
 
   @include vp-1199 {
-    margin-bottom: 21px;
-    font-size: 25px;
-    line-height: 25px;
+    margin-bottom: 6px;
   }
 
   @include vp-767 {
-    margin-bottom: 16px;
-    font-size: 22px;
-    line-height: 22px;
+    margin-bottom: 1px;
   }
 }
 
@@ -65,6 +61,10 @@
 
   @include vp-1199 {
     margin-bottom: 27px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 26px;
   }
 }
 
@@ -156,6 +156,7 @@
 
 // PROCESS
 .training__heading {
+  margin-top: 0;
   margin-bottom: 23px;
   font-size: 21px;
   font-weight: 700;
@@ -168,7 +169,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 18px;
+    margin-bottom: 19px;
     font-size: 16px;
     line-height: 16px;
   }
