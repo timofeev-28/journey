@@ -61,9 +61,14 @@ const trainingSliderOptions = {
     },
     430: {
       slidesPerView: 2,
+      spaceBetween: 10,
     },
     580: {
       slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20,
     },
     1025: {
       slidesPerView: 4,
