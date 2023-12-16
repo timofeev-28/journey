@@ -6,15 +6,9 @@ const trainingSliderSelector = '[data-swiper="training"]';
 const reviewsSliderSelector = '[data-swiper="reviews"]';
 
 const heroSliderOptions = {
-  slidesPerView: 1,
   loop: true,
-  speed: 800,
-
-  breakpoints: {
-    1200: {
-      allowTouchMove: false,
-    },
-  },
+  speed: 750,
+  grabCursor: true,
 
   pagination: {
     el: '[data-swiper="hero-pagination"]',
@@ -28,14 +22,11 @@ const toursSliderOptions = {
     nextEl: '[data-button="tours-next"]',
     prevEl: '[data-button="tours-prev"]',
   },
-  slidesPerView: 3,
-  spaceBetween: 30,
-  speed: 800,
+
+  speed: 750,
+  grabCursor: true,
 
   breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
     768: {
       slidesPerView: 2,
       spaceBetween: 18,
@@ -52,9 +43,9 @@ const trainingSliderOptions = {
     nextEl: '[data-button="training-next"]',
     prevEl: '[data-button="training-prev"]',
   },
-  slidesPerView: 4,
-  spaceBetween: 20,
+
   speed: 800,
+  grabCursor: true,
 
   breakpoints: {
     0: {
@@ -66,6 +57,7 @@ const trainingSliderOptions = {
     },
     580: {
       slidesPerView: 3,
+      spaceBetween: 10,
     },
     768: {
       slidesPerView: 3,
@@ -73,6 +65,7 @@ const trainingSliderOptions = {
     },
     1025: {
       slidesPerView: 4,
+      spaceBetween: 20,
     },
   },
 };
@@ -84,13 +77,24 @@ const reviewsSliderOptions = {
   },
 
   loop: true,
-  speed: 800,
+  speed: 750,
+  grabCursor: true,
 
   breakpoints: {
-    700: {
-      slidesPerView: 30,
+    350: {
+      slidesPerView: 'auto',
+      spaceBetween: 20,
     },
-    1025: {
+    768: {
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+    },
+    1024: {
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+    },
+    1200: {
+      slidesPerView: 'auto',
       spaceBetween: 120,
     },
   },
