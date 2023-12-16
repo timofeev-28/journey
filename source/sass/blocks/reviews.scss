@@ -1,0 +1,43 @@
+.reviews {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.reviews__slider-wrapper {
+  position: relative;
+}
+
+.reviews__btn-slider {
+  top: -55px;
+
+  &--next {
+    right: 0;
+
+    & svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  &--prev {
+    right: 41px;
+    left: auto;
+  }
+
+  @include vp-1199 {
+    top: -65px;
+  }
+
+  @include vp-767 {
+    top: -60px;
+  }
+}
+
+.reviews__btn-slider.swiper-button-disabled {
+  background-color: $color-disabled;
+}
+
+.reviews__list {
+  margin-block: 0;
+  padding-left: 0;
+  list-style: none;
+}
