@@ -4,6 +4,7 @@ import {initBurger} from './modules/init/init-burger';
 import {initSliders} from './modules/init/init-swipers';
 import {initVideo} from './modules/init/init-video';
 import {initCreateStars} from './modules/init/init-stars';
+import {changeWidth} from './modules/width-control/width-control';
 
 // ---------------------------------
 
@@ -24,6 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     initBurger();
+    changeWidth();
     initSliders();
     initVideo();
     initCreateStars();

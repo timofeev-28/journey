@@ -1,9 +1,11 @@
+import {isSliderSelector} from '../../utils/isSliderSelector';
 import Swiper from '../../vendor/swiper';
 
 const heroSliderSelector = '[data-swiper="hero"]';
 const toursSliderSelector = '[data-swiper="tours"]';
 const trainingSliderSelector = '[data-swiper="training"]';
 const reviewsSliderSelector = '[data-swiper="reviews"]';
+const advantagesSliderSelector = '[data-swiper="advantages"]';
 
 const heroSliderOptions = {
   loop: true,
@@ -100,20 +102,68 @@ const reviewsSliderOptions = {
   },
 };
 
+const advantagesSliderOptions = {
+  navigation: {
+    nextEl: '[data-button="advantages-next"]',
+    prevEl: '[data-button="advantages-prev"]',
+  },
+
+  loop: true,
+  centeredSlides: true,
+  grabCursor: true,
+
+  breakpoints: {
+    1200: {
+      initialSlide: 2,
+      spaceBetween: 30,
+      slidesPerView: 3.585,
+    },
+  },
+};
+
+// инициализация свайпера
 const initSlider = (sliderSelector, options) => {
-  if (!document.querySelector(sliderSelector)) {
-    return null;
-  }
+  isSliderSelector(sliderSelector);
 
   const swiper = new Swiper(sliderSelector, options);
   return swiper;
 };
+
+// инициализация свайпера в advantages
+const initAdantagesSlider = (sliderSelector, options) => {
+  isSliderSelector(sliderSelector);
+
+  let swiper;
+  let desktop = window.matchMedia('(min-width: 1200px)');
+
+  const createSlider = () => {
+    swiper = new Swiper(sliderSelector, options);
+    return swiper;
+  };
+
+  if (desktop.matches) {
+    createSlider();
+  }
+
+  const resizeWidthHandler = () => {
+    if (!desktop.matches && swiper) {
+      swiper.destroy();
+
+    } else if (desktop.matches && !swiper.initialized) {
+      createSlider();
+    }
+  };
+
+  window.addEventListener('resize', resizeWidthHandler);
+};
+
 
 const initSliders = () => {
   initSlider(heroSliderSelector, heroSliderOptions);
   initSlider(toursSliderSelector, toursSliderOptions);
   initSlider(trainingSliderSelector, trainingSliderOptions);
   initSlider(reviewsSliderSelector, reviewsSliderOptions);
+  initAdantagesSlider(advantagesSliderSelector, advantagesSliderOptions);
 };
 
 // добавляется возможность фокуса на слайды
