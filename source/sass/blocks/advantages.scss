@@ -1,6 +1,6 @@
 .advantages {
   padding-top: 25px;
-  padding-bottom: 90px;
+  padding-bottom: 110px;
 
   @include vp-1199 {
     padding-top: 45px;
@@ -16,6 +16,7 @@
 .advantages__title {
   margin-bottom: 32px;
   text-align: center;
+  // overflow-x: clip;
 
   &::before {
     left: 50%;
@@ -29,6 +30,7 @@
 
 .advantages__slider-wrapper {
   position: relative;
+  // overflow-x: clip;
 }
 
 .advantages__btn-slider-wrapper {
