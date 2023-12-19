@@ -1,0 +1,191 @@
+.gallery {
+  padding-top: 53px;
+  padding-bottom: 20px;
+
+  @include vp-1023 {
+    padding-top: 0;
+  }
+
+  @include vp-767 {
+    padding-top: 28px;
+  }
+}
+
+.gallery__title {
+  margin-top: 0;
+  margin-bottom: 9px;
+  padding-inline: 120px;
+
+  @include vp-1199 {
+    margin-bottom: 2px;
+    padding-inline: 45px;
+  }
+
+  @include vp-1023 {
+    padding-top: 19px;
+  }
+
+  @include vp-767 {
+    margin-bottom: -1px;
+    padding-inline: 15px;
+  }
+}
+
+.gallery__descr {
+  margin-top: 0;
+  margin-bottom: 45px;
+  padding-inline: 120px;
+  max-width: 935px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+
+  @include vp-1199 {
+    margin-bottom: 21px;
+    padding-inline: 45px;
+    max-width: 474px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 65px;
+    padding-inline: 15px;
+    max-width: 300px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.gallery__slider-wrapper {
+  position: relative;
+
+  @include vp-767 {
+    padding-inline: 15px;
+  }
+}
+
+.gallery__btn-slider {
+  top: -87px;
+
+  &--next {
+    right: 120px;
+
+    @include vp-1199 {
+      right: 45px;
+    }
+
+    @include vp-767 {
+      right: 15px;
+    }
+
+    & svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  &--prev {
+    right: 162px;
+    left: auto;
+
+    @include vp-1199 {
+      right: 86px;
+    }
+
+    @include vp-767 {
+      right: 56px;
+    }
+  }
+
+  @include vp-1199 {
+    top: -56px;
+  }
+
+  @include vp-767 {
+    top: -50px;
+  }
+}
+
+.gallery__btn-slider.swiper-button-disabled {
+  background-color: $color-disabled;
+}
+
+.gallery__list {
+  margin-block: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.gallery__item {
+  width: 275px;
+  height: 450px;
+  margin-right: 5px;
+
+  @include vp-1199 {
+    width: 338px;
+  }
+
+  @include vp-1023 {
+    width: 253px;
+  }
+
+  @include vp-767 {
+    width: 159px;
+    height: 260px;
+    margin-right: 2px;
+  }
+
+  &--double {
+    width: 298px;
+
+    @include vp-1199 {
+      width: 338px;
+    }
+
+    @include vp-1023 {
+      width: 253px;
+    }
+  }
+
+  &--second {
+    width: 272px;
+
+    @include vp-1199 {
+      width: 338px;
+    }
+
+    @include vp-1023 {
+      width: 253px;
+    }
+  }
+
+  &--third {
+    width: 276px;
+
+    @include vp-1199 {
+      width: 338px;
+    }
+
+    @include vp-1023 {
+      width: 253px;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: $color-btn;
+  }
+}
+
+.gallery__item-wrapper {
+  display: grid;
+  grid-template-rows: 180px 265px;
+  gap: 5px;
+
+  @include vp-767 {
+    grid-template-rows: 100px 157px;
+    gap: 3px;
+  }
+}

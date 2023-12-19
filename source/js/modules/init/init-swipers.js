@@ -6,6 +6,7 @@ const toursSliderSelector = '[data-swiper="tours"]';
 const trainingSliderSelector = '[data-swiper="training"]';
 const reviewsSliderSelector = '[data-swiper="reviews"]';
 const advantagesSliderSelector = '[data-swiper="advantages"]';
+const gallerySliderSelector = '[data-swiper="gallery"]';
 
 const heroSliderOptions = {
   loop: true,
@@ -121,6 +122,18 @@ const advantagesSliderOptions = {
   },
 };
 
+const gallerySliderOptions = {
+  navigation: {
+    nextEl: '[data-button="gallery-next"]',
+    prevEl: '[data-button="gallery-prev"]',
+  },
+
+  slidesPerView: 'auto',
+  loop: true,
+  speed: 750,
+  grabCursor: true,
+};
+
 // инициализация свайпера
 const initSlider = (sliderSelector, options) => {
   isSliderSelector(sliderSelector);
@@ -156,6 +169,7 @@ const initAdantagesSlider = (sliderSelector, options) => {
 
   window.addEventListener('resize', resizeWidthHandler);
 };
+// ---------------------------------------------------
 
 
 const initSliders = () => {
@@ -164,6 +178,7 @@ const initSliders = () => {
   initSlider(trainingSliderSelector, trainingSliderOptions);
   initSlider(reviewsSliderSelector, reviewsSliderOptions);
   initAdantagesSlider(advantagesSliderSelector, advantagesSliderOptions);
+  initSlider(gallerySliderSelector, gallerySliderOptions);
 };
 
 // добавляется возможность фокуса на слайды

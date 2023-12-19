@@ -832,25 +832,23 @@
         </section>
 
         <section class="gallery" id="gallery">
-          <h3 class="gallery__title title">Фотогалерея</h3>
+          <h3 class="gallery__title title title--small" data-tilte="Фотогалерея">Фотогалерея</h3>
           <p class="gallery__descr">Добавляйте фото в Instagram с хэштегом #лайфтур, а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
-          <div class="gallery-wrapper">
-            <div class="gallery-slider-wrapper">
-              <div class="gallery-slider gallery-slider--prev btn-slider swiper-button-prev" data-button="advantages-prev">
-                <svg width="14" height="9" role="img" focusable="false" aria-hidden="true">
-                  <use href="./img/sprite.svg#arrow-left"></use>
-                </svg>
-              </div>
-              <div class="gallery-slider gallery-slider--next btn-slider swiper-button-next" data-button="advantages-next">
-                <svg width="14" height="9" role="img" focusable="false" aria-hidden="true">
-                  <use href="./img/sprite.svg#arrow-left"></use>
-                </svg>
-              </div>
+          <div class="gallery__slider-wrapper">
+            <div class="gallery__btn-slider gallery__btn-slider--prev btn-slider swiper-button-prev" data-button="gallery-prev">
+              <svg width="14" height="9" role="img" focusable="false" aria-hidden="true">
+                <use href="./img/sprite.svg#arrow-left"></use>
+              </svg>
+            </div>
+            <div class="gallery__btn-slider gallery__btn-slider--next btn-slider swiper-button-next" data-button="gallery-next">
+              <svg width="14" height="9" role="img" focusable="false" aria-hidden="true">
+                <use href="./img/sprite.svg#arrow-left"></use>
+              </svg>
             </div>
 
-            <div class="gallery swiper" data-swiper="advantages">
-              <ul class="gallery swiper-wrapper">
-                <li class="gallery swiper-slide" data-slide="slide" data-width="slide">
+            <div class="gallery__swiper swiper" data-swiper="gallery">
+              <ul class="gallery__list swiper-wrapper">
+                <li class="gallery__item swiper-slide" data-slide="slide">
                   <picture>
                     <source type="image/webp" media="(max-width: 350px)" width="159" height="260" srcset="./img/gallery/gallery-1-mobile@1x.webp 1x, ./img/gallery/gallery-1-mobile@2x.webp 2x">
                     <source type="image/webp" media="(max-width: 768px)" width="253" height="450" srcset="./img/gallery/gallery-1-tablet-768@1x.webp 1x, ./img/gallery/gallery-1-tablet-768@2x.webp 2x">
@@ -862,31 +860,31 @@
                     <img src="./img/gallery/gallery-1-desktop@1x.jpg" width="275" height="449" srcset="./img/gallery/gallery-1-desktop@2x.jpg 2x" alt="Путешественник на вершине горы.">
                   </picture>
                 </li>
-                <li class="advantages__item swiper-slide" data-slide="slide">
+                <li class="gallery__item gallery__item--double swiper-slide" data-slide="slide">
                   <div class="gallery__item-wrapper">
                     <picture>
-                      <source type="image/webp" media="(max-width: 350px)" width="159" height="260" srcset="./img/gallery/gallery-2-mobile@1x.webp 1x, ./img/gallery/gallery-2-mobile@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 768px)" width="253" height="450" srcset="./img/gallery/gallery-2-tablet-768@1x.webp 1x, ./img/gallery/gallery-2-tablet-768@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 1024px)" width="338" height="450" srcset="./img/gallery/gallery-2-tablet-1024@1x.webp 1x, ./img/gallery/gallery-2-tablet-1024@2x.webp 2x">
-                      <source type="image/webp" width="275" height="449" srcset="./img/gallery/gallery-2-desktop@1x.webp 1x, ./img/gallery/gallery-2-desktop@2x.webp 2x">
-                      <source type="image/jpeg" media="(max-width: 350px)" width="159" height="260" srcset="./img/gallery/gallery-2-mobile@1x.jpg 1x, ./img/gallery/gallery-2-mobile@2x.jpg 2x">
-                      <source type="image/jpeg" media="(max-width: 768px)" width="253" height="450" srcset="./img/gallery/gallery-2-tablet-768@1x.jpg 1x, ./img/gallery/gallery-2-tablet-768@2x.jpg 2x">
-                      <source type="image/jpeg" media="(max-width: 1024px)" width="338" height="450" srcset="./img/gallery/gallery-2-tablet-1024@1x.jpg 1x, ./img/gallery/gallery-2-tablet-1024@2x.jpg 2x">
-                      <img src="./img/gallery/gallery-2-desktop@1x.jpg" width="275" height="449" srcset="./img/gallery/gallery-2-desktop@2x.jpg 2x" alt="Путешественник на вершине горы.">
+                      <source type="image/webp" media="(max-width: 350px)" width="159" height="100" srcset="./img/gallery/gallery-2-mobile@1x.webp 1x, ./img/gallery/gallery-2-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 768px)" width="254" height="180" srcset="./img/gallery/gallery-2-tablet-768@1x.webp 1x, ./img/gallery/gallery-2-tablet-768@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1024px)" width="338" height="180" srcset="./img/gallery/gallery-2-tablet-1024@1x.webp 1x, ./img/gallery/gallery-2-tablet-1024@2x.webp 2x">
+                      <source type="image/webp" width="298" height="179" srcset="./img/gallery/gallery-2-desktop@1x.webp 1x, ./img/gallery/gallery-2-desktop@2x.webp 2x">
+                      <source type="image/jpeg" media="(max-width: 350px)" width="159" height="100" srcset="./img/gallery/gallery-2-mobile@1x.jpg 1x, ./img/gallery/gallery-2-mobile@2x.jpg 2x">
+                      <source type="image/jpeg" media="(max-width: 768px)" width="254" height="180" srcset="./img/gallery/gallery-2-tablet-768@1x.jpg 1x, ./img/gallery/gallery-2-tablet-768@2x.jpg 2x">
+                      <source type="image/jpeg" media="(max-width: 1024px)" width="338" height="180" srcset="./img/gallery/gallery-2-tablet-1024@1x.jpg 1x, ./img/gallery/gallery-2-tablet-1024@2x.jpg 2x">
+                      <img src="./img/gallery/gallery-2-desktop@1x.jpg" width="298" height="179" srcset="./img/gallery/gallery-2-desktop@2x.jpg 2x" alt="Путешественник на вершине горы.">
                     </picture>
                     <picture>
-                      <source type="image/webp" media="(max-width: 350px)" width="159" height="260" srcset="./img/gallery/gallery-3-mobile@1x.webp 1x, ./img/gallery/gallery-3-mobile@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 768px)" width="253" height="450" srcset="./img/gallery/gallery-3-tablet-768@1x.webp 1x, ./img/gallery/gallery-3-tablet-768@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 1024px)" width="338" height="450" srcset="./img/gallery/gallery-3-tablet-1024@1x.webp 1x, ./img/gallery/gallery-3-tablet-1024@2x.webp 2x">
-                      <source type="image/webp" width="275" height="449" srcset="./img/gallery/gallery-3-desktop@1x.webp 1x, ./img/gallery/gallery-3-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 350px)" width="157" height="260" srcset="./img/gallery/gallery-3-mobile@1x.webp 1x, ./img/gallery/gallery-3-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 768px)" width="254" height="265" srcset="./img/gallery/gallery-3-tablet-768@1x.webp 1x, ./img/gallery/gallery-3-tablet-768@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1024px)" width="338" height="265" srcset="./img/gallery/gallery-3-tablet-1024@1x.webp 1x, ./img/gallery/gallery-3-tablet-1024@2x.webp 2x">
+                      <source type="image/webp" width="298" height="265" srcset="./img/gallery/gallery-3-desktop@1x.webp 1x, ./img/gallery/gallery-3-desktop@2x.webp 2x">
                       <source type="image/jpeg" media="(max-width: 350px)" width="159" height="260" srcset="./img/gallery/gallery-3-mobile@1x.jpg 1x, ./img/gallery/gallery-3-mobile@2x.jpg 2x">
-                      <source type="image/jpeg" media="(max-width: 768px)" width="253" height="450" srcset="./img/gallery/gallery-3-tablet-768@1x.jpg 1x, ./img/gallery/gallery-3-tablet-768@2x.jpg 2x">
-                      <source type="image/jpeg" media="(max-width: 1024px)" width="338" height="450" srcset="./img/gallery/gallery-3-tablet-1024@1x.jpg 1x, ./img/gallery/gallery-3-tablet-1024@2x.jpg 2x">
-                      <img src="./img/gallery/gallery-3-desktop@1x.jpg" width="275" height="449" srcset="./img/gallery/gallery-3-desktop@2x.jpg 2x" alt="Путешественник на вершине горы.">
+                      <source type="image/jpeg" media="(max-width: 768px)" width="254" height="265" srcset="./img/gallery/gallery-3-tablet-768@1x.jpg 1x, ./img/gallery/gallery-3-tablet-768@2x.jpg 2x">
+                      <source type="image/jpeg" media="(max-width: 1024px)" width="338" height="265" srcset="./img/gallery/gallery-3-tablet-1024@1x.jpg 1x, ./img/gallery/gallery-3-tablet-1024@2x.jpg 2x">
+                      <img src="./img/gallery/gallery-3-desktop@1x.jpg" width="298" height="265" srcset="./img/gallery/gallery-3-desktop@2x.jpg 2x" alt="Путешественник на вершине горы.">
                     </picture>
                   </div>
                 </li>
-                <li class="advantages__item swiper-slide" data-slide="slide">
+                <li class="gallery__item gallery__item--second swiper-slide" data-slide="slide">
                   <picture>
                     <source type="image/webp" media="(max-width: 350px)" width="159" height="260" srcset="./img/gallery/gallery-4-mobile@1x.webp 1x, ./img/gallery/gallery-4-mobile@2x.webp 2x">
                     <source type="image/webp" media="(max-width: 768px)" width="253" height="450" srcset="./img/gallery/gallery-4-tablet-768@1x.webp 1x, ./img/gallery/gallery-4-tablet-768@2x.webp 2x">
@@ -898,40 +896,40 @@
                     <img src="./img/gallery/gallery-4-desktop@1x.jpg" width="275" height="449" srcset="./img/gallery/gallery-4-desktop@2x.jpg 2x" alt="Путешественник на вершине горы.">
                   </picture>
                 </li>
-                <li class="advantages__item swiper-slide" data-slide="slide">
+                <li class="gallery__item gallery__item--double swiper-slide" data-slide="slide">
                   <div class="gallery__item-wrapper">
                     <picture>
-                      <source type="image/webp" media="(max-width: 350px)" width="159" height="260" srcset="./img/gallery/gallery-4-mobile@1x.webp 1x, ./img/gallery/gallery-4-mobile@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 768px)" width="253" height="450" srcset="./img/gallery/gallery-4-tablet-768@1x.webp 1x, ./img/gallery/gallery-4-tablet-768@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 1024px)" width="338" height="450" srcset="./img/gallery/gallery-4-tablet-1024@1x.webp 1x, ./img/gallery/gallery-4-tablet-1024@2x.webp 2x">
-                      <source type="image/webp" width="275" height="449" srcset="./img/gallery/gallery-4-desktop@1x.webp 1x, ./img/gallery/gallery-4-desktop@2x.webp 2x">
-                      <source type="image/jpeg" media="(max-width: 350px)" width="159" height="260" srcset="./img/gallery/gallery-4-mobile@1x.jpg 1x, ./img/gallery/gallery-4-mobile@2x.jpg 2x">
-                      <source type="image/jpeg" media="(max-width: 768px)" width="253" height="450" srcset="./img/gallery/gallery-4-tablet-768@1x.jpg 1x, ./img/gallery/gallery-4-tablet-768@2x.jpg 2x">
-                      <source type="image/jpeg" media="(max-width: 1024px)" width="338" height="450" srcset="./img/gallery/gallery-4-tablet-1024@1x.jpg 1x, ./img/gallery/gallery-4-tablet-1024@2x.jpg 2x">
-                      <img src="./img/gallery/gallery-4-desktop@1x.jpg" width="275" height="449" srcset="./img/gallery/gallery-4-desktop@2x.jpg 2x" alt="Путешественник на вершине горы.">
+                      <source type="image/webp" media="(max-width: 350px)" width="159" height="100" srcset="./img/gallery/gallery-5-mobile@1x.webp 1x, ./img/gallery/gallery-5-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 768px)" width="253" height="180" srcset="./img/gallery/gallery-5-tablet-768@1x.webp 1x, ./img/gallery/gallery-5-tablet-768@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1024px)" width="338" height="180" srcset="./img/gallery/gallery-5-tablet-1024@1x.webp 1x, ./img/gallery/gallery-5-tablet-1024@2x.webp 2x">
+                      <source type="image/webp" width="298" height="180" srcset="./img/gallery/gallery-5-desktop@1x.webp 1x, ./img/gallery/gallery-5-desktop@2x.webp 2x">
+                      <source type="image/jpeg" media="(max-width: 350px)" width="159" height="100" srcset="./img/gallery/gallery-5-mobile@1x.jpg 1x, ./img/gallery/gallery-5-mobile@2x.jpg 2x">
+                      <source type="image/jpeg" media="(max-width: 768px)" width="253" height="180" srcset="./img/gallery/gallery-5-tablet-768@1x.jpg 1x, ./img/gallery/gallery-5-tablet-768@2x.jpg 2x">
+                      <source type="image/jpeg" media="(max-width: 1024px)" width="338" height="180" srcset="./img/gallery/gallery-5-tablet-1024@1x.jpg 1x, ./img/gallery/gallery-5-tablet-1024@2x.jpg 2x">
+                      <img src="./img/gallery/gallery-5-desktop@1x.jpg" width="298" height="180" srcset="./img/gallery/gallery-5-desktop@2x.jpg 2x" alt="Путешественник на вершине горы.">
                     </picture>
                     <picture>
-                      <source type="image/webp" media="(max-width: 350px)" width="159" height="260" srcset="./img/gallery/gallery-5-mobile@1x.webp 1x, ./img/gallery/gallery-5-mobile@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 768px)" width="253" height="450" srcset="./img/gallery/gallery-5-tablet-768@1x.webp 1x, ./img/gallery/gallery-5-tablet-768@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 1024px)" width="338" height="450" srcset="./img/gallery/gallery-5-tablet-1024@1x.webp 1x, ./img/gallery/gallery-5-tablet-1024@2x.webp 2x">
-                      <source type="image/webp" width="275" height="449" srcset="./img/gallery/gallery-5-desktop@1x.webp 1x, ./img/gallery/gallery-5-desktop@2x.webp 2x">
-                      <source type="image/jpeg" media="(max-width: 350px)" width="159" height="260" srcset="./img/gallery/gallery-5-mobile@1x.jpg 1x, ./img/gallery/gallery-5-mobile@2x.jpg 2x">
-                      <source type="image/jpeg" media="(max-width: 768px)" width="253" height="450" srcset="./img/gallery/gallery-5-tablet-768@1x.jpg 1x, ./img/gallery/gallery-5-tablet-768@2x.jpg 2x">
-                      <source type="image/jpeg" media="(max-width: 1024px)" width="338" height="450" srcset="./img/gallery/gallery-5-tablet-1024@1x.jpg 1x, ./img/gallery/gallery-5-tablet-1024@2x.jpg 2x">
-                      <img src="./img/gallery/gallery-5-desktop@1x.jpg" width="275" height="449" srcset="./img/gallery/gallery-5-desktop@2x.jpg 2x" alt="Путешественник на вершине горы.">
+                      <source type="image/webp" media="(max-width: 350px)" width="159" height="157" srcset="./img/gallery/gallery-6-mobile@1x.webp 1x, ./img/gallery/gallery-6-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 768px)" width="253" height="265" srcset="./img/gallery/gallery-6-tablet-768@1x.webp 1x, ./img/gallery/gallery-6-tablet-768@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1024px)" width="338" height="265" srcset="./img/gallery/gallery-6-tablet-1024@1x.webp 1x, ./img/gallery/gallery-6-tablet-1024@2x.webp 2x">
+                      <source type="image/webp" width="298" height="266" srcset="./img/gallery/gallery-6-desktop@1x.webp 1x, ./img/gallery/gallery-6-desktop@2x.webp 2x">
+                      <source type="image/jpeg" media="(max-width: 350px)" width="159" height="157" srcset="./img/gallery/gallery-6-mobile@1x.jpg 1x, ./img/gallery/gallery-6-mobile@2x.jpg 2x">
+                      <source type="image/jpeg" media="(max-width: 768px)" width="253" height="265" srcset="./img/gallery/gallery-6-tablet-768@1x.jpg 1x, ./img/gallery/gallery-6-tablet-768@2x.jpg 2x">
+                      <source type="image/jpeg" media="(max-width: 1024px)" width="338" height="265" srcset="./img/gallery/gallery-6-tablet-1024@1x.jpg 1x, ./img/gallery/gallery-6-tablet-1024@2x.jpg 2x">
+                      <img src="./img/gallery/gallery-6-desktop@1x.jpg" width="298" height="266" srcset="./img/gallery/gallery-6-desktop@2x.jpg 2x" alt="Путешественник на вершине горы.">
                     </picture>
                   </div>
                 </li>
-                <li class="advantages__item swiper-slide" data-slide="slide">
+                <li class="gallery__item gallery__item--third swiper-slide" data-slide="slide">
                   <picture>
-                    <source type="image/webp" media="(max-width: 350px)" width="159" height="260" srcset="./img/gallery/gallery-6-mobile@1x.webp 1x, ./img/gallery/gallery-6-mobile@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 768px)" width="253" height="450" srcset="./img/gallery/gallery-6-tablet-768@1x.webp 1x, ./img/gallery/gallery-6-tablet-768@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1024px)" width="338" height="450" srcset="./img/gallery/gallery-6-tablet-1024@1x.webp 1x, ./img/gallery/gallery-6-tablet-1024@2x.webp 2x">
-                    <source type="image/webp" width="275" height="449" srcset="./img/gallery/gallery-5-desktop@1x.webp 1x, ./img/gallery/gallery-6-desktop@2x.webp 2x">
-                    <source type="image/jpeg" media="(max-width: 350px)" width="159" height="260" srcset="./img/gallery/gallery-6-mobile@1x.jpg 1x, ./img/gallery/gallery-6-mobile@2x.jpg 2x">
-                    <source type="image/jpeg" media="(max-width: 768px)" width="253" height="450" srcset="./img/gallery/gallery-6-tablet-768@1x.jpg 1x, ./img/gallery/gallery-6-tablet-768@2x.jpg 2x">
-                    <source type="image/jpeg" media="(max-width: 1024px)" width="338" height="450" srcset="./img/gallery/gallery-6-tablet-1024@1x.jpg 1x, ./img/gallery/gallery-6-tablet-1024@2x.jpg 2x">
-                    <img src="./img/gallery/gallery-6-desktop@1x.jpg" width="275" height="449" srcset="./img/gallery/gallery-6-desktop@2x.jpg 2x" alt="Путешественник на вершине горы.">
+                    <source type="image/webp" media="(max-width: 350px)" width="159" height="260" srcset="./img/gallery/gallery-7-mobile@1x.webp 1x, ./img/gallery/gallery-7-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 768px)" width="253" height="450" srcset="./img/gallery/gallery-7-tablet-768@1x.webp 1x, ./img/gallery/gallery-7-tablet-768@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1024px)" width="338" height="450" srcset="./img/gallery/gallery-7-tablet-1024@1x.webp 1x, ./img/gallery/gallery-7-tablet-1024@2x.webp 2x">
+                    <source type="image/webp" width="275" height="449" srcset="./img/gallery/gallery-7-desktop@1x.webp 1x, ./img/gallery/gallery-7-desktop@2x.webp 2x">
+                    <source type="image/jpeg" media="(max-width: 350px)" width="159" height="260" srcset="./img/gallery/gallery-7-mobile@1x.jpg 1x, ./img/gallery/gallery-7-mobile@2x.jpg 2x">
+                    <source type="image/jpeg" media="(max-width: 768px)" width="253" height="450" srcset="./img/gallery/gallery-7-tablet-768@1x.jpg 1x, ./img/gallery/gallery-7-tablet-768@2x.jpg 2x">
+                    <source type="image/jpeg" media="(max-width: 1024px)" width="338" height="450" srcset="./img/gallery/gallery-7-tablet-1024@1x.jpg 1x, ./img/gallery/gallery-7-tablet-1024@2x.jpg 2x">
+                    <img src="./img/gallery/gallery-7-desktop@1x.jpg" width="275" height="449" srcset="./img/gallery/gallery-7-desktop@2x.jpg 2x" alt="Путешественник на вершине горы.">
                   </picture>
                 </li>
               </ul>
