@@ -132,6 +132,7 @@ const gallerySliderOptions = {
   loop: true,
   speed: 750,
   grabCursor: true,
+  loopAddBlankSlides: true,
 };
 
 // инициализация свайпера
