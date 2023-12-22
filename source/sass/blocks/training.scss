@@ -215,7 +215,7 @@
   }
 
   @include vp-767 {
-    padding: 4px 55px 10px 64px;
+    padding: 4px 10px 10px 64px;
 
     &--mountain {
       order: 4;
@@ -238,7 +238,7 @@
     }
 
     @include vp-767 {
-      max-width: 201px;
+      max-width: 223px;
       font-size: 12px;
       line-height: 18px;
     }

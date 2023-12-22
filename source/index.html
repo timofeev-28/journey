@@ -20,7 +20,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
+      <header class="header" id="header">
         <div class="container">
           <div class="header__container" data-burger="container">
             <button class="header__burger burger" aria-label="Открытие меню навигации" data-burger="burger">
@@ -777,7 +777,6 @@
                 </svg>
               </div>
             </div>
-
             <div class="advantages__swiper swiper" data-swiper="advantages">
               <ul class="advantages__list swiper-wrapper">
                 <li class="advantages__item swiper-slide" data-slide="slide" data-width="slide">
@@ -972,11 +971,11 @@
           </div>
         </section>
         <section class="contacts" id="contacts">
-          <div class="container">
-            <h2 class="contacts__title title">Контакты</h2>
+          <div class="contacts__container container">
+            <h2 class="contacts__title title title--small">Контакты</h2>
             <div class="contacts__content-wrapper">
               <div class="contacts__descr-wrapper">
-                <p>Свяжитесь с&nbsp;нами любым удобным для вас способом или приходите к&nbsp;нам в&nbsp;гости. Мы&nbsp;будем рады поделиться увлекательными историями и&nbsp;подобрать для вас тур.</p>
+                <p>Свяжитесь с&nbsp;нами любым удобным для вас&nbsp;способом или приходите к&nbsp;нам&nbsp;в&nbsp;гости. Мы&nbsp;будем рады поделиться увлекательными историями и&nbsp;подобрать для вас тур.</p>
               </div>
               <address>
                 <ul class="address__list">
@@ -996,22 +995,49 @@
                   </li>
                   <li class="address__item">
                     <svg width="26" height="26" role="img" focusable="false" aria-hidden="true">
-                      <use href="img/sprite.svg#pin-stroked"></use>
+                      <use href="img/sprite.svg#pin-stroke"></use>
                     </svg>
                     <h3 class="address__term">Адрес</h3>
                     <span class="address__content">г. Москва, пр-т Мира, д.&nbsp;14, офис 101</span>
                   </li>
                 </ul>
               </address>
-              <div class="contacts__map-wrapper">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.057148628651!2d37.630066577106795!3d55.774879290290244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a6e17875109%3A0x390d6670ee1585e5!2z0L_RgC3RgiDQnNC40YDQsCwgMTQsINCc0L7RgdC60LLQsCwgMTI5MDkw!5e0!3m2!1sru!2sru!4v1703240743746!5m2!1sru!2sru" width="585" height="324" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
+            </div>
+            <div class="contacts__map-wrapper">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.057148628651!2d37.630066577106795!3d55.774879290290244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a6e17875109%3A0x390d6670ee1585e5!2z0L_RgC3RgiDQnNC40YDQsCwgMTQsINCc0L7RgdC60LLQsCwgMTI5MDkw!5e0!3m2!1sru!2sru!4v1703240743746!5m2!1sru!2sru" width="585" height="324" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </section>
       </main>
-      <footer>
-        <div class="container"></div>
+      <footer class="footer">
+        <div class="container">
+          <a class="footer__logo" href="#header">
+            <img src="./img/svg/logotype.svg" alt="Логотип компании lifetour">
+          </a>
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#tours">Туры</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#training">Обучение</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#about">О нас</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#reviews">Отзывы</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#gallery">Фотографии</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="footer__link" href="tel:88007253232">8 800 725-32-32</a>
+        </div>
       </footer>
     </div>
     <div class="overlay" data-burger="overlay"></div>
