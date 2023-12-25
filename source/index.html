@@ -192,260 +192,272 @@
             </ul>
           </div>
         </section>
-        <section class="tours container" id="tours">
-          <h2 class="tours__title title" data-title="Ближайшие туры">Ближайшие туры</h2>
-          <div class="tours__slider-wrapper">
-            <div class="tours__btn-slider tours__btn-slider--prev btn-slider swiper-button-prev" data-button="tours-prev">
-              <svg width="14" height="9" role="img" focusable="false" aria-hidden="true">
-                <use href="./img/sprite.svg#arrow-left"></use>
-              </svg>
+        <section class="tours" id="tours">
+          <div class="container">
+            <h2 class="tours__title title" data-title="Ближайшие туры">Ближайшие туры</h2>
+            <div class="tours__slider-wrapper">
+              <div class="tours__btn-slider tours__btn-slider--prev btn-slider swiper-button-prev" data-button="tours-prev">
+                <svg width="14" height="9" role="img" focusable="false" aria-hidden="true">
+                  <use href="./img/sprite.svg#arrow-left"></use>
+                </svg>
+              </div>
+              <div class="tours__btn-slider tours__btn-slider--next btn-slider swiper-button-next" data-button="tours-next">
+                <svg width="14" height="9" role="img" focusable="false" aria-hidden="true">
+                  <use href="./img/sprite.svg#arrow-left"></use>
+                </svg>
+              </div>
+              <div class="tours__swiper swiper" data-swiper="tours">
+                <ul class="tours__list swiper-wrapper">
+                  <li class="tours__item swiper-slide" data-slide="slide">
+                    <div class="tours__image-wrapper">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 350px)" srcset="img/tours/tours-1-mobile@1x.webp 1x, img/tours/tours-1-mobile@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 768px)" srcset="img/tours/tours-1-tablet@1x.webp 1x, img/tours/tours-1-tablet@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/tours/tours-1-big-tablet@1x.webp 1x, img/tours/tours-1-big-tablet@2x.webp 2x">
+                        <source type="image/webp" width="380" height="416" srcset="img/tours/tours-1-desktop@1x.webp 1x, img/tours/tours-1-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 350px)" srcset="img/tours/tours-1-mobile@1x.jpg 1x, img/tours/tours-1-mobile@2x.jpg 2x">
+                        <source type="image/webp" media="(max-width: 768px)" srcset="img/tours/tours-1-tablet@1x.jpg 1x, img/tours/tours-1-tablet@2x.jpg 2x">
+                        <source type="image/jpeg" media="(max-width: 1199px)" srcset="img/tours/tours-1-tablet@1x.jpg 1x, img/tours/tours-1-tablet@2x.jpg 2x">
+                        <img src="img/tours/tours-1-desktop@1x.jpg" width="380" height="416" srcset="img/tours/tours-1-desktop@2x.jpg 2x" alt="Горы с живописной долиной внизу.">
+                      </picture>
+                    </div>
+                    <div class="tours__location-wrapper">
+                      <span class="tours__location">
+                        <svg width="16" height="16" role="img" focusable="false" aria-hidden="true">
+                          <use href="./img/sprite.svg#mark-white"></use>
+                        </svg>
+                        Кавказ</span>
+                      <span class="tours__days">
+                        <svg width="20" height="20" role="img" focusable="false" aria-hidden="true">
+                          <use href="./img/sprite.svg#sun"></use>
+                        </svg>
+                        4 дня</span>
+                      <span class="tours__nights">
+                        <svg width="20" height="20" role="img" focusable="false" aria-hidden="true">
+                          <use href="./img/sprite.svg#moon"></use>
+                        </svg>
+                        3 ночи</span>
+                    </div>
+                    <h3 class="tours__subtitle">Путешествие вокруг&nbsp;Эльбруса</h3>
+                    <dl class="tours__specifications">
+                      <div class="tours__term-wrapper">
+                        <dt>Сложность</dt>
+                        <dd data-stars="4"></dd>
+                      </div>
+                      <div class="tours__term-wrapper tours__term-wrapper--date">
+                        <dt>Даты набора:</dt>
+                        <dd class="tours__descr">12.06-19.06</dd>
+                      </div>
+                      <div class="tours__term-wrapper">
+                        <dt>Группа:</dt>
+                        <dd class="tours__descr">до 15 чел.</dd>
+                      </div>
+                    </dl>
+                  </li>
+                  <li class="tours__item swiper-slide" data-slide="slide">
+                    <div class="tours__image-wrapper">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 350px)" srcset="img/tours/tours-2-mobile@1x.webp 1x, img/tours/tours-2-mobile@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 768px)" srcset="img/tours/tours-2-tablet@1x.webp 1x, img/tours/tours-2-tablet@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/tours/tours-2-big-tablet@1x.webp 1x, img/tours/tours-2-big-tablet@2x.webp 2x">
+                        <source type="image/webp" width="380" height="416" srcset="img/tours/tours-2-desktop@1x.webp 1x, img/tours/tours-2-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 350px)" srcset="img/tours/tours-2-mobile@1x.jpg 1x, img/tours/tours-2-mobile@2x.jpg 2x">
+                        <source type="image/webp" media="(max-width: 768px)" srcset="img/tours/tours-2-tablet@1x.jpg 1x, img/tours/tours-2-tablet@2x.jpg 2x">
+                        <source type="image/jpeg" media="(max-width: 1199px)" srcset="img/tours/tours-2-tablet@1x.jpg 1x, img/tours/tours-2-tablet@2x.jpg 2x">
+                        <img src="img/tours/tours-2-desktop@1x.jpg" width="380" height="416" srcset="img/tours/tours-2-desktop@2x.jpg 2x" alt="Горы с заснеженными вершинами.">
+                      </picture>
+                    </div>
+                    <div class="tours__location-wrapper">
+                      <span class="tours__location">
+                        <svg width="16" height="16" role="img" focusable="false" aria-hidden="true">
+                          <use href="./img/sprite.svg#mark-white"></use>
+                        </svg>
+                        Алтай</span>
+                      <span class="tours__days">
+                        <svg width="20" height="20" role="img" focusable="false" aria-hidden="true">
+                          <use href="./img/sprite.svg#sun"></use>
+                        </svg>
+                        14 дней</span>
+                      <span class="tours__nights">
+                        <svg width="20" height="20" role="img" focusable="false" aria-hidden="true">
+                          <use href="./img/sprite.svg#moon"></use>
+                        </svg>
+                        13 ночей</span>
+                    </div>
+                    <h3 class="tours__subtitle">Путь к&nbsp;подножию Белухи</h3>
+                    <dl class="tours__specifications">
+                      <div class="tours__term-wrapper">
+                        <dt>Сложность</dt>
+                        <dd data-stars="3"></dd>
+                      </div>
+                      <div class="tours__term-wrapper tours__term-wrapper--date">
+                        <dt>Даты набора:</dt>
+                        <dd class="tours__descr">14.06-23.06</dd>
+                      </div>
+                      <div class="tours__term-wrapper">
+                        <dt>Группа:</dt>
+                        <dd class="tours__descr">до 25 чел.</dd>
+                      </div>
+                    </dl>
+                  </li>
+                  <li class="tours__item swiper-slide" data-slide="slide">
+                    <div class="tours__image-wrapper">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 350px)" srcset="img/tours/tours-3-mobile@1x.webp 1x, img/tours/tours-3-mobile@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 768px)" srcset="img/tours/tours-3-tablet@1x.webp 1x, img/tours/tours-3-tablet@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/tours/tours-3-big-tablet@1x.webp 1x, img/tours/tours-3-big-tablet@2x.webp 2x">
+                        <source type="image/webp" width="380" height="416" srcset="img/tours/tours-3-desktop@1x.webp 1x, img/tours/tours-3-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 350px)" srcset="img/tours/tours-3-mobile@1x.jpg 1x, img/tours/tours-3-mobile@2x.jpg 2x">
+                        <source type="image/webp" media="(max-width: 768px)" srcset="img/tours/tours-3-tablet@1x.jpg 1x, img/tours/tours-3-tablet@2x.jpg 2x">
+                        <source type="image/jpeg" media="(max-width: 1199px)" srcset="img/tours/tours-3-tablet@1x.jpg 1x, img/tours/tours-3-tablet@2x.jpg 2x">
+                        <img src="img/tours/tours-3-desktop@1x.jpg" width="380" height="416" srcset="img/tours/tours-3-desktop@2x.jpg 2x" alt="Горы, поросшие лесом с вершинами в облаках.">
+                      </picture>
+                    </div>
+                    <div class="tours__location-wrapper">
+                      <span class="tours__location">
+                        <svg width="16" height="16" role="img" focusable="false" aria-hidden="true">
+                          <use href="./img/sprite.svg#mark-white"></use>
+                        </svg>
+                        Адыгея</span>
+                      <span class="tours__days">
+                        <svg width="20" height="20" role="img" focusable="false" aria-hidden="true">
+                          <use href="./img/sprite.svg#sun"></use>
+                        </svg>
+                        7 дней</span>
+                      <span class="tours__nights">
+                        <svg width="20" height="20" role="img" focusable="false" aria-hidden="true">
+                          <use href="./img/sprite.svg#moon"></use>
+                        </svg>
+                        6 ночей</span>
+                    </div>
+                    <h3 class="tours__subtitle">Через Фишт к&nbsp;Чёрному морю и&nbsp;обратно</h3>
+                    <dl class="tours__specifications">
+                      <div class="tours__term-wrapper">
+                        <dt>Сложность</dt>
+                        <dd data-stars="4"></dd>
+                      </div>
+                      <div class="tours__term-wrapper tours__term-wrapper--date">
+                        <dt>Даты набора:</dt>
+                        <dd class="tours__descr">12.06-19.06</dd>
+                      </div>
+                      <div class="tours__term-wrapper">
+                        <dt>Группа:</dt>
+                        <dd class="tours__descr">до 15 чел.</dd>
+                      </div>
+                    </dl>
+                  </li>
+                  <li class="tours__item swiper-slide" data-slide="slide">
+                    <div class="tours__image-wrapper">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 350px)" srcset="img/tours/tours-1-mobile@1x.webp 1x, img/tours/tours-1-mobile@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 768px)" srcset="img/tours/tours-1-tablet@1x.webp 1x, img/tours/tours-1-tablet@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/tours/tours-1-big-tablet@1x.webp 1x, img/tours/tours-1-big-tablet@2x.webp 2x">
+                        <source type="image/webp" width="380" height="416" srcset="img/tours/tours-1-desktop@1x.webp 1x, img/tours/tours-1-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 350px)" srcset="img/tours/tours-1-mobile@1x.jpg 1x, img/tours/tours-1-mobile@2x.jpg 2x">
+                        <source type="image/webp" media="(max-width: 768px)" srcset="img/tours/tours-1-tablet@1x.jpg 1x, img/tours/tours-1-tablet@2x.jpg 2x">
+                        <source type="image/jpeg" media="(max-width: 1199px)" srcset="img/tours/tours-1-tablet@1x.jpg 1x, img/tours/tours-1-tablet@2x.jpg 2x">
+                        <img src="img/tours/tours-1-desktop@1x.jpg" width="380" height="416" srcset="img/tours/tours-1-desktop@2x.jpg 2x" alt="Горы с живописной долиной внизу.">
+                      </picture>
+                    </div>
+                    <div class="tours__location-wrapper">
+                      <span class="tours__location">
+                        <svg width="16" height="16" role="img" focusable="false" aria-hidden="true">
+                          <use href="./img/sprite.svg#mark-white"></use>
+                        </svg>
+                        Кавказ</span>
+                      <span class="tours__days">
+                        <svg width="20" height="20" role="img" focusable="false" aria-hidden="true">
+                          <use href="./img/sprite.svg#sun"></use>
+                        </svg>
+                        4 дня</span>
+                      <span class="tours__nights">
+                        <svg width="20" height="20" role="img" focusable="false" aria-hidden="true">
+                          <use href="./img/sprite.svg#moon"></use>
+                        </svg>
+                        3 ночи</span>
+                    </div>
+                    <h3 class="tours__subtitle">Путешествие вокруг&nbsp;Эльбруса</h3>
+                    <dl class="tours__specifications">
+                      <div class="tours__term-wrapper">
+                        <dt>Сложность</dt>
+                        <dd data-stars="4"></dd>
+                      </div>
+                      <div class="tours__term-wrapper tours__term-wrapper--date">
+                        <dt>Даты набора:</dt>
+                        <dd class="tours__descr">12.06-19.06</dd>
+                      </div>
+                      <div class="tours__term-wrapper">
+                        <dt>Группа:</dt>
+                        <dd class="tours__descr">до 15 чел.</dd>
+                      </div>
+                    </dl>
+                  </li>
+                  <li class="tours__item swiper-slide" data-slide="slide">
+                    <div class="tours__image-wrapper">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 350px)" srcset="img/tours/tours-2-mobile@1x.webp 1x, img/tours/tours-2-mobile@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 768px)" srcset="img/tours/tours-2-tablet@1x.webp 1x, img/tours/tours-2-tablet@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/tours/tours-2-big-tablet@1x.webp 1x, img/tours/tours-2-big-tablet@2x.webp 2x">
+                        <source type="image/webp" width="380" height="416" srcset="img/tours/tours-2-desktop@1x.webp 1x, img/tours/tours-2-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 350px)" srcset="img/tours/tours-2-mobile@1x.jpg 1x, img/tours/tours-2-mobile@2x.jpg 2x">
+                        <source type="image/webp" media="(max-width: 768px)" srcset="img/tours/tours-2-tablet@1x.jpg 1x, img/tours/tours-2-tablet@2x.jpg 2x">
+                        <source type="image/jpeg" media="(max-width: 1199px)" srcset="img/tours/tours-2-tablet@1x.jpg 1x, img/tours/tours-2-tablet@2x.jpg 2x">
+                        <img src="img/tours/tours-2-desktop@1x.jpg" width="380" height="416" srcset="img/tours/tours-2-desktop@2x.jpg 2x" alt="Горы с заснеженными вершинами.">
+                      </picture>
+                    </div>
+                    <div class="tours__location-wrapper">
+                      <span class="tours__location">
+                        <svg width="16" height="16" role="img" focusable="false" aria-hidden="true">
+                          <use href="./img/sprite.svg#mark-white"></use>
+                        </svg>
+                        Кавказ</span>
+                      <span class="tours__days">
+                        <svg width="20" height="20" role="img" focusable="false" aria-hidden="true">
+                          <use href="./img/sprite.svg#sun"></use>
+                        </svg>
+                        4 дня</span>
+                      <span class="tours__nights">
+                        <svg width="20" height="20" role="img" focusable="false" aria-hidden="true">
+                          <use href="./img/sprite.svg#moon"></use>
+                        </svg>
+                        3 ночи</span>
+                    </div>
+                    <h3 class="tours__subtitle">Путешествие вокруг&nbsp;Эльбруса</h3>
+                    <dl class="tours__specifications">
+                      <div class="tours__term-wrapper">
+                        <dt>Сложность</dt>
+                        <dd data-stars="4"></dd>
+                      </div>
+                      <div class="tours__term-wrapper tours__term-wrapper--date">
+                        <dt>Даты набора:</dt>
+                        <dd class="tours__descr">12.06-19.06</dd>
+                      </div>
+                      <div class="tours__term-wrapper">
+                        <dt>Группа:</dt>
+                        <dd class="tours__descr">до 15 чел.</dd>
+                      </div>
+                    </dl>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="tours__btn-slider tours__btn-slider--next btn-slider swiper-button-next" data-button="tours-next">
-              <svg width="14" height="9" role="img" focusable="false" aria-hidden="true">
-                <use href="./img/sprite.svg#arrow-left"></use>
-              </svg>
-            </div>
-            <div class="tours__swiper swiper" data-swiper="tours">
-              <ul class="tours__list swiper-wrapper">
-                <li class="tours__item swiper-slide" data-slide="slide">
-                  <div class="tours__image-wrapper">
-                    <picture>
-                      <source type="image/webp" media="(max-width: 350px)" srcset="img/tours/tours-1-mobile@1x.webp 1x, img/tours/tours-1-mobile@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 768px)" srcset="img/tours/tours-1-tablet@1x.webp 1x, img/tours/tours-1-tablet@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/tours/tours-1-big-tablet@1x.webp 1x, img/tours/tours-1-big-tablet@2x.webp 2x">
-                      <source type="image/webp" width="380" height="416" srcset="img/tours/tours-1-desktop@1x.webp 1x, img/tours/tours-1-desktop@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 350px)" srcset="img/tours/tours-1-mobile@1x.jpg 1x, img/tours/tours-1-mobile@2x.jpg 2x">
-                      <source type="image/webp" media="(max-width: 768px)" srcset="img/tours/tours-1-tablet@1x.jpg 1x, img/tours/tours-1-tablet@2x.jpg 2x">
-                      <source type="image/jpeg" media="(max-width: 1199px)" srcset="img/tours/tours-1-tablet@1x.jpg 1x, img/tours/tours-1-tablet@2x.jpg 2x">
-                      <img src="img/tours/tours-1-desktop@1x.jpg" width="380" height="416" srcset="img/tours/tours-1-desktop@2x.jpg 2x" alt="Горы с живописной долиной внизу.">
-                    </picture>
-                  </div>
-                  <div class="tours__location-wrapper">
-                    <span class="tours__location">
-                      <svg width="16" height="16" role="img" focusable="false" aria-hidden="true">
-                        <use href="./img/sprite.svg#mark-white"></use>
-                      </svg>
-                      Кавказ</span>
-                    <span class="tours__days">
-                      <svg width="20" height="20" role="img" focusable="false" aria-hidden="true">
-                        <use href="./img/sprite.svg#sun"></use>
-                      </svg>
-                      4 дня</span>
-                    <span class="tours__nights">
-                      <svg width="20" height="20" role="img" focusable="false" aria-hidden="true">
-                        <use href="./img/sprite.svg#moon"></use>
-                      </svg>
-                      3 ночи</span>
-                  </div>
-                  <h3 class="tours__subtitle">Путешествие вокруг&nbsp;Эльбруса</h3>
-                  <dl class="tours__specifications">
-                    <div class="tours__term-wrapper">
-                      <dt>Сложность</dt>
-                      <dd data-stars="4"></dd>
-                    </div>
-                    <div class="tours__term-wrapper tours__term-wrapper--date">
-                      <dt>Даты набора:</dt>
-                      <dd class="tours__descr">12.06-19.06</dd>
-                    </div>
-                    <div class="tours__term-wrapper">
-                      <dt>Группа:</dt>
-                      <dd class="tours__descr">до 15 чел.</dd>
-                    </div>
-                  </dl>
-                </li>
-                <li class="tours__item swiper-slide" data-slide="slide">
-                  <div class="tours__image-wrapper">
-                    <picture>
-                      <source type="image/webp" media="(max-width: 350px)" srcset="img/tours/tours-2-mobile@1x.webp 1x, img/tours/tours-2-mobile@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 768px)" srcset="img/tours/tours-2-tablet@1x.webp 1x, img/tours/tours-2-tablet@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/tours/tours-2-big-tablet@1x.webp 1x, img/tours/tours-2-big-tablet@2x.webp 2x">
-                      <source type="image/webp" width="380" height="416" srcset="img/tours/tours-2-desktop@1x.webp 1x, img/tours/tours-2-desktop@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 350px)" srcset="img/tours/tours-2-mobile@1x.jpg 1x, img/tours/tours-2-mobile@2x.jpg 2x">
-                      <source type="image/webp" media="(max-width: 768px)" srcset="img/tours/tours-2-tablet@1x.jpg 1x, img/tours/tours-2-tablet@2x.jpg 2x">
-                      <source type="image/jpeg" media="(max-width: 1199px)" srcset="img/tours/tours-2-tablet@1x.jpg 1x, img/tours/tours-2-tablet@2x.jpg 2x">
-                      <img src="img/tours/tours-2-desktop@1x.jpg" width="380" height="416" srcset="img/tours/tours-2-desktop@2x.jpg 2x" alt="Горы с заснеженными вершинами.">
-                    </picture>
-                  </div>
-                  <div class="tours__location-wrapper">
-                    <span class="tours__location">
-                      <svg width="16" height="16" role="img" focusable="false" aria-hidden="true">
-                        <use href="./img/sprite.svg#mark-white"></use>
-                      </svg>
-                      Алтай</span>
-                    <span class="tours__days">
-                      <svg width="20" height="20" role="img" focusable="false" aria-hidden="true">
-                        <use href="./img/sprite.svg#sun"></use>
-                      </svg>
-                      14 дней</span>
-                    <span class="tours__nights">
-                      <svg width="20" height="20" role="img" focusable="false" aria-hidden="true">
-                        <use href="./img/sprite.svg#moon"></use>
-                      </svg>
-                      13 ночей</span>
-                  </div>
-                  <h3 class="tours__subtitle">Путь к&nbsp;подножию Белухи</h3>
-                  <dl class="tours__specifications">
-                    <div class="tours__term-wrapper">
-                      <dt>Сложность</dt>
-                      <dd data-stars="3"></dd>
-                    </div>
-                    <div class="tours__term-wrapper tours__term-wrapper--date">
-                      <dt>Даты набора:</dt>
-                      <dd class="tours__descr">14.06-23.06</dd>
-                    </div>
-                    <div class="tours__term-wrapper">
-                      <dt>Группа:</dt>
-                      <dd class="tours__descr">до 25 чел.</dd>
-                    </div>
-                  </dl>
-                </li>
-                <li class="tours__item swiper-slide" data-slide="slide">
-                  <div class="tours__image-wrapper">
-                    <picture>
-                      <source type="image/webp" media="(max-width: 350px)" srcset="img/tours/tours-3-mobile@1x.webp 1x, img/tours/tours-3-mobile@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 768px)" srcset="img/tours/tours-3-tablet@1x.webp 1x, img/tours/tours-3-tablet@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/tours/tours-3-big-tablet@1x.webp 1x, img/tours/tours-3-big-tablet@2x.webp 2x">
-                      <source type="image/webp" width="380" height="416" srcset="img/tours/tours-3-desktop@1x.webp 1x, img/tours/tours-3-desktop@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 350px)" srcset="img/tours/tours-3-mobile@1x.jpg 1x, img/tours/tours-3-mobile@2x.jpg 2x">
-                      <source type="image/webp" media="(max-width: 768px)" srcset="img/tours/tours-3-tablet@1x.jpg 1x, img/tours/tours-3-tablet@2x.jpg 2x">
-                      <source type="image/jpeg" media="(max-width: 1199px)" srcset="img/tours/tours-3-tablet@1x.jpg 1x, img/tours/tours-3-tablet@2x.jpg 2x">
-                      <img src="img/tours/tours-3-desktop@1x.jpg" width="380" height="416" srcset="img/tours/tours-3-desktop@2x.jpg 2x" alt="Горы, поросшие лесом с вершинами в облаках.">
-                    </picture>
-                  </div>
-                  <div class="tours__location-wrapper">
-                    <span class="tours__location">
-                      <svg width="16" height="16" role="img" focusable="false" aria-hidden="true">
-                        <use href="./img/sprite.svg#mark-white"></use>
-                      </svg>
-                      Адыгея</span>
-                    <span class="tours__days">
-                      <svg width="20" height="20" role="img" focusable="false" aria-hidden="true">
-                        <use href="./img/sprite.svg#sun"></use>
-                      </svg>
-                      7 дней</span>
-                    <span class="tours__nights">
-                      <svg width="20" height="20" role="img" focusable="false" aria-hidden="true">
-                        <use href="./img/sprite.svg#moon"></use>
-                      </svg>
-                      6 ночей</span>
-                  </div>
-                  <h3 class="tours__subtitle">Через Фишт к&nbsp;Чёрному морю и&nbsp;обратно</h3>
-                  <dl class="tours__specifications">
-                    <div class="tours__term-wrapper">
-                      <dt>Сложность</dt>
-                      <dd data-stars="4"></dd>
-                    </div>
-                    <div class="tours__term-wrapper tours__term-wrapper--date">
-                      <dt>Даты набора:</dt>
-                      <dd class="tours__descr">12.06-19.06</dd>
-                    </div>
-                    <div class="tours__term-wrapper">
-                      <dt>Группа:</dt>
-                      <dd class="tours__descr">до 15 чел.</dd>
-                    </div>
-                  </dl>
-                </li>
-                <li class="tours__item swiper-slide" data-slide="slide">
-                  <div class="tours__image-wrapper">
-                    <picture>
-                      <source type="image/webp" media="(max-width: 350px)" srcset="img/tours/tours-1-mobile@1x.webp 1x, img/tours/tours-1-mobile@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 768px)" srcset="img/tours/tours-1-tablet@1x.webp 1x, img/tours/tours-1-tablet@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/tours/tours-1-big-tablet@1x.webp 1x, img/tours/tours-1-big-tablet@2x.webp 2x">
-                      <source type="image/webp" width="380" height="416" srcset="img/tours/tours-1-desktop@1x.webp 1x, img/tours/tours-1-desktop@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 350px)" srcset="img/tours/tours-1-mobile@1x.jpg 1x, img/tours/tours-1-mobile@2x.jpg 2x">
-                      <source type="image/webp" media="(max-width: 768px)" srcset="img/tours/tours-1-tablet@1x.jpg 1x, img/tours/tours-1-tablet@2x.jpg 2x">
-                      <source type="image/jpeg" media="(max-width: 1199px)" srcset="img/tours/tours-1-tablet@1x.jpg 1x, img/tours/tours-1-tablet@2x.jpg 2x">
-                      <img src="img/tours/tours-1-desktop@1x.jpg" width="380" height="416" srcset="img/tours/tours-1-desktop@2x.jpg 2x" alt="Горы с живописной долиной внизу.">
-                    </picture>
-                  </div>
-                  <div class="tours__location-wrapper">
-                    <span class="tours__location">
-                      <svg width="16" height="16" role="img" focusable="false" aria-hidden="true">
-                        <use href="./img/sprite.svg#mark-white"></use>
-                      </svg>
-                      Кавказ</span>
-                    <span class="tours__days">
-                      <svg width="20" height="20" role="img" focusable="false" aria-hidden="true">
-                        <use href="./img/sprite.svg#sun"></use>
-                      </svg>
-                      4 дня</span>
-                    <span class="tours__nights">
-                      <svg width="20" height="20" role="img" focusable="false" aria-hidden="true">
-                        <use href="./img/sprite.svg#moon"></use>
-                      </svg>
-                      3 ночи</span>
-                  </div>
-                  <h3 class="tours__subtitle">Путешествие вокруг&nbsp;Эльбруса</h3>
-                  <dl class="tours__specifications">
-                    <div class="tours__term-wrapper">
-                      <dt>Сложность</dt>
-                      <dd data-stars="4"></dd>
-                    </div>
-                    <div class="tours__term-wrapper tours__term-wrapper--date">
-                      <dt>Даты набора:</dt>
-                      <dd class="tours__descr">12.06-19.06</dd>
-                    </div>
-                    <div class="tours__term-wrapper">
-                      <dt>Группа:</dt>
-                      <dd class="tours__descr">до 15 чел.</dd>
-                    </div>
-                  </dl>
-                </li>
-                <li class="tours__item swiper-slide" data-slide="slide">
-                  <div class="tours__image-wrapper">
-                    <picture>
-                      <source type="image/webp" media="(max-width: 350px)" srcset="img/tours/tours-2-mobile@1x.webp 1x, img/tours/tours-2-mobile@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 768px)" srcset="img/tours/tours-2-tablet@1x.webp 1x, img/tours/tours-2-tablet@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/tours/tours-2-big-tablet@1x.webp 1x, img/tours/tours-2-big-tablet@2x.webp 2x">
-                      <source type="image/webp" width="380" height="416" srcset="img/tours/tours-2-desktop@1x.webp 1x, img/tours/tours-2-desktop@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 350px)" srcset="img/tours/tours-2-mobile@1x.jpg 1x, img/tours/tours-2-mobile@2x.jpg 2x">
-                      <source type="image/webp" media="(max-width: 768px)" srcset="img/tours/tours-2-tablet@1x.jpg 1x, img/tours/tours-2-tablet@2x.jpg 2x">
-                      <source type="image/jpeg" media="(max-width: 1199px)" srcset="img/tours/tours-2-tablet@1x.jpg 1x, img/tours/tours-2-tablet@2x.jpg 2x">
-                      <img src="img/tours/tours-2-desktop@1x.jpg" width="380" height="416" srcset="img/tours/tours-2-desktop@2x.jpg 2x" alt="Горы с заснеженными вершинами.">
-                    </picture>
-                  </div>
-                  <div class="tours__location-wrapper">
-                    <span class="tours__location">
-                      <svg width="16" height="16" role="img" focusable="false" aria-hidden="true">
-                        <use href="./img/sprite.svg#mark-white"></use>
-                      </svg>
-                      Кавказ</span>
-                    <span class="tours__days">
-                      <svg width="20" height="20" role="img" focusable="false" aria-hidden="true">
-                        <use href="./img/sprite.svg#sun"></use>
-                      </svg>
-                      4 дня</span>
-                    <span class="tours__nights">
-                      <svg width="20" height="20" role="img" focusable="false" aria-hidden="true">
-                        <use href="./img/sprite.svg#moon"></use>
-                      </svg>
-                      3 ночи</span>
-                  </div>
-                  <h3 class="tours__subtitle">Путешествие вокруг&nbsp;Эльбруса</h3>
-                  <dl class="tours__specifications">
-                    <div class="tours__term-wrapper">
-                      <dt>Сложность</dt>
-                      <dd data-stars="4"></dd>
-                    </div>
-                    <div class="tours__term-wrapper tours__term-wrapper--date">
-                      <dt>Даты набора:</dt>
-                      <dd class="tours__descr">12.06-19.06</dd>
-                    </div>
-                    <div class="tours__term-wrapper">
-                      <dt>Группа:</dt>
-                      <dd class="tours__descr">до 15 чел.</dd>
-                    </div>
-                  </dl>
-                </li>
-              </ul>
+            <div class="tours__link-wrapper">
+              <a class="tours__link">Показать все туры
+                <svg width="9" height="14" role="img" focusable="false" aria-hidden="true">
+                  <use href="./img/sprite.svg#arrow-small"></use>
+                </svg>
+              </a>
             </div>
           </div>
-          <div class="tours__link-wrapper">
-            <a class="tours__link">Показать все туры
-              <svg width="9" height="14" role="img" focusable="false" aria-hidden="true">
-                <use href="./img/sprite.svg#arrow-small"></use>
-              </svg>
-            </a>
+          <div class="tours__image-clouds">
+            <picture>
+              <source type="image/webp" media="(max-width: 350px)" srcset="./img/tours/clouds-mobile.webp">
+              <source type="image/webp" media="(max-width: 1199px)" srcset="./img/tours/clouds-tablet.webp">
+              <source type="image/webp" width="602" height="1630" srcset="./img/tours/clouds-desktop.webp">
+              <source type="image/png" media="(max-width: 350px)" srcset="./img/tours/clouds-mobile.png">
+              <source type="image/png" media="(max-width: 1199px)" srcset="./img/tours/clouds-tablet.png">
+              <img src="./img/tours/clouds-desktop.png" width="602" height="1630" alt="">
+            </picture>
           </div>
         </section>
         <section class="training container" id="training">
@@ -1010,19 +1022,19 @@
         </section>
       </main>
       <footer class="footer">
-        <div class="container">
+        <div class="footer__container container">
           <a class="footer__logo" href="#header">
-            <img src="./img/svg/logotype.svg" alt="Логотип компании lifetour">
+            <img src="./img/svg/logotype.svg" width="142" height="42" alt="Логотип компании lifetour">
           </a>
           <nav class="footer__nav">
             <ul class="footer__nav-list">
               <li class="footer__nav-item">
                 <a class="footer__nav-link" href="#tours">Туры</a>
               </li>
-              <li class="footer__nav-item">
+              <li class="footer__nav-item footer__nav-item--left-2">
                 <a class="footer__nav-link" href="#training">Обучение</a>
               </li>
-              <li class="footer__nav-item">
+              <li class="footer__nav-item footer__nav-item--left-3">
                 <a class="footer__nav-link" href="#about">О нас</a>
               </li>
               <li class="footer__nav-item">
@@ -1037,6 +1049,30 @@
             </ul>
           </nav>
           <a class="footer__link" href="tel:88007253232">8 800 725-32-32</a>
+          <ul class="footer__list-social social">
+            <li class="social__item">
+              <a class="social__link" href="https://vk.com" aria-label="Социальная сеть В Контакте">
+                <svg width="32" height="30" role="img" focusable="false" aria-hidden="true">
+                  <use href="img/sprite.svg#vk-footer"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://vk.ru" aria-label="Социальная сеть В Контакте">
+                <svg width="32" height="30" role="img" focusable="false" aria-hidden="true">
+                  <use href="img/sprite.svg#ok"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://reddit.com" aria-label="Социальная сеть Reddit">
+                <svg width="32" height="30" role="img" focusable="false" aria-hidden="true">
+                  <use href="img/sprite.svg#reddit"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <a class="footer__copyright-link" href="#">Политика конфеденциальности</a>
         </div>
       </footer>
     </div>

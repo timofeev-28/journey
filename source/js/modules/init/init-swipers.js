@@ -49,6 +49,7 @@ const trainingSliderOptions = {
 
   speed: 800,
   grabCursor: true,
+  loop: true,
 
   breakpoints: {
     0: {

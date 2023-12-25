@@ -1,6 +1,7 @@
 .about {
   padding-top: 14px;
   padding-bottom: 15px;
+  max-width: 1920px;
 
   @include vp-1199 {
     padding-bottom: 70px;

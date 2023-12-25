@@ -1,4 +1,6 @@
 .training {
+  position: relative;
+  z-index: 1;
   padding-top: 49px;
   padding-bottom: 56px;
 
@@ -111,6 +113,7 @@
   height: auto;
   min-height: 356px;
   padding: 14px;
+  background-color: $color-white;
   border: 1px solid rgba(2, 102, 193, 0.1);
 }
 

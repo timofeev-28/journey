@@ -1,6 +1,8 @@
 .tours {
+  position: relative;
   padding-top: 98px;
   padding-bottom: 75px;
+  max-width: 1920px;
 
   @include vp-1199 {
     padding-top: 43px;
@@ -253,5 +255,32 @@
     position: absolute;
     top: 0;
     right: -1px;
+  }
+}
+
+.tours__image-clouds {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+
+  @media (max-width: 500px) {
+    top: 110px;
+  }
+
+  img {
+    width: 602px;
+    height: 1630px;
+    object-fit: cover;
+
+    @include vp-1199 {
+      width: 602px;
+      height: 1364px;
+    }
+
+    @media (max-width: 350px) {
+      width: 171px;
+      height: 595px;
+    }
   }
 }
