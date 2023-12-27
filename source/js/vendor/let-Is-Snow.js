@@ -1,4 +1,4 @@
-const snow = () => {
+const getSnow = () => {
   ! function(l, s) {
     "object" == typeof exports && "object" == typeof module ? module.exports = s() : "function" == typeof define && define.amd ? define([], s) : "object" == typeof exports ? exports.Snow = s() : l.Snow = s()
   }(self, (() => (() => {
@@ -118,4 +118,4 @@ const snow = () => {
   })()));
 };
 
-export default snow();
+export default getSnow();
