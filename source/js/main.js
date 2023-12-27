@@ -5,6 +5,7 @@ import {initSliders} from './modules/init/init-swipers';
 import {initVideo} from './modules/init/init-video';
 import {initCreateStars} from './modules/init/init-stars';
 import {changeWidth} from './modules/width-control/width-control';
+import {letIsSnow} from './modules/init/init-snow';
 
 // ---------------------------------
 
@@ -24,6 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    letIsSnow();
     initBurger();
     changeWidth();
     initSliders();
