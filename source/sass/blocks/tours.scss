@@ -2,7 +2,6 @@
   position: relative;
   padding-top: 98px;
   padding-bottom: 75px;
-  max-width: 1920px;
 
   @include vp-1199 {
     padding-top: 43px;
@@ -66,12 +65,6 @@
   background-color: $color-disabled;
 }
 // ------------------
-
-// .tours__list {
-//   margin-block: 0;
-//   padding-left: 0;
-//   list-style: none;
-// }
 
 .tours__item {
   display: flex;
